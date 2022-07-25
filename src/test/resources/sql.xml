@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="getMAOccupancyData">
+	 <![CDATA[	 
+	 	SELECT round(SUM(metricvalue*leasecount)/SUM(leasecount)*100,1) as exepected 
+	 	FROM Propertymetric 
+	 	WHERE metriccode in (?) 
+	 	AND floorplan = '~' 
+	 	AND unittype = '~' 
+	 	AND aggregationlevel between ? 
+	 	AND ? and propertyid in (?)
+	 ]]>
+	</entry>
+	<entry key="getMAOccupancyMultipleMarketsData">
+	 <![CDATA[	 
+	 	SELECT round(SUM(metricvalue*leasecount)/SUM(leasecount)*100,1) as exepected 
+	 	FROM Propertymetric 
+	 	WHERE metriccode in (?) 
+	 	AND floorplan = '~' 
+	 	AND unittype = '~' 
+	 	AND aggregationlevel between ? 
+	 	AND ? and propertyid in (?,?)
+	 ]]>
+	</entry>
+	
+</properties>

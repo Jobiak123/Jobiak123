@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.2.xsd  
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+	<context:component-scan base-package="com.jbk.automation.framework" />
+	
+	<bean
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>prod.properties</value>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="ccDataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="${cc_connection_url}" />
+		<property name="username" value="carecrew_dev" />
+		<property name="password" value="C@r3cr3w@Wr!t3" />
+	</bean>
+	
+	<bean id="ccJdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="ccDataSource"></property>
+	</bean>
+	
+	<bean id="ccEnvURL" class="java.lang.String">
+		<constructor-arg value="${cc_web_url}"></constructor-arg>
+	</bean>
+	<bean id="ccEnvJobURL" class="java.lang.String">
+		<constructor-arg value="${cc_web_job_url}"></constructor-arg>
+	</bean>
+	<bean id="grid_url" class="java.lang.String">
+		<constructor-arg value="${grid_url}"></constructor-arg>
+	</bean>
+	<bean id="root_folder" class="java.lang.String">
+		<constructor-arg value="${root_folder}"></constructor-arg>
+	</bean>
+	
+	<bean id="CCTestDataWorkBookName" class="java.lang.String">
+		<constructor-arg value="${CCTestDataWorkBookName}"></constructor-arg>
+	</bean>
+	
+	<bean id="MHTestDataWorkBookName" class="java.lang.String">
+		<constructor-arg value="${MHTestDataWorkBookName}"></constructor-arg>
+	</bean>
+	
+	<bean id="HCJTestDataWorkBookName" class="java.lang.String">
+		<constructor-arg value="${HCJTestDataWorkBookName}"></constructor-arg>
+	</bean>
+	
+	<bean id="configEnv" class="java.lang.String">
+		<constructor-arg value="prod"></constructor-arg>
+	</bean>
+
+</beans>  

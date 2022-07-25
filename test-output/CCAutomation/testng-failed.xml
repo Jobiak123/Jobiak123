@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CCAutomation]" verbose="2">
+  <parameter name="browsername" value="chrome"/>
+  <parameter name="browserversion" value="103.0.5060"/>
+  <parameter name="platform" value="windows"/>
+  <listeners>
+    <listener class-name="atu.testng.reports.listeners.ATUReportsListener"/>
+    <listener class-name="atu.testng.reports.listeners.ConfigurationListener"/>
+    <listener class-name="atu.testng.reports.listeners.MethodListener"/>
+  </listeners>
+  <test name="CareCrewAutomation(failed)">
+    <parameter name="browsername" value="chrome"/>
+    <parameter name="browserversion" value="103.0.5060"/>
+    <parameter name="platform" value="windows"/>
+    <classes>
+      <class name="com.jbk.mh.scripts.CCJobsDetailsPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="indexDescription"/>
+          <include name="tearDown"/>
+          <include name="beforeSuite"/>
+          <include name="validateJobDetailsPageTest"/>
+          <include name="setUpTest"/>
+        </methods>
+      </class> <!-- com.jbk.mh.scripts.CCJobsDetailsPageTest -->
+    </classes>
+  </test> <!-- CareCrewAutomation(failed) -->
+</suite> <!-- Failed suite [CCAutomation] -->

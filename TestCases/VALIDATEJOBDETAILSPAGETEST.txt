@@ -1,0 +1,28 @@
+************************** - VALIDATEJOBDETAILSPAGETEST - STEPS TO REPRODUCE DEFECT - **************************
+
+Verify element is clickable HomeLink
+Verify click action on: getHomeLink
+Verify text is entered to JobsTitleField textbox
+Verify click action on: SearchIcon
+Verify Nurse Practitioner or Physician Assistant - Urgent Care -is displayed
+Verify Ochsner Healthis displayed
+Verify Scott, LA, USis displayed
+Verify Jul 23, 2022is displayed
+Verify click action on: Job Title
+Switch to :Nurse Practitioner Or Physician Assistant - Urgent Care - job in Scott, LA, US at Ochsner Health
+Verify element Facebook Icon is Displayed
+Verify element Twitter Icon is Displayed
+Verify element LinkedIn Icon is Displayed
+Verify element Apply Now Button is Displayed
+Verify Nurse Practitioner or Physician Assistant - Urgent Care -is displayed
+Verify Ochsner Healthis displayed
+Verify Scott, LA, USis displayed
+Verify Jul 23, 2022is displayed
+Verify Descriptionis displayed
+Verify Job Type: FULL TIMEis displayed
+Verify Industry: Healthcareis displayed
+Verify Estimated Salary: $111,094 per yearis displayed
+Verify Other job searches for Ochsner Healthis displayed
+Verify Other jobs in Scottis displayed
+Switch to :Nurse Practitioner Or Physician Assistant - Urgent Care - job in Scott, LA, US at Ochsner Health
+

@@ -1,0 +1,172 @@
+			*******************************************************
+			Test Script Name	: VALIDATEJOBDETAILSPAGETEST
+			Test Environment	: 
+			Test Executed By	: ADMIN
+			Java Version		: 18.0.1.1
+			OS Name / Version	: WINDOWS 11 / 10.0
+			Computer Name		: DESKTOP-5JEQ8JD
+			Browser Name / Version	: 
+			Test Start Time		: Thu Jul 21 15:22:50 IST 2022
+			Test End Time		: Thu Jul 21 15:23:38 IST 2022
+			Script Execution Time	: 00:00:49
+			Total Number Of Steps	: 26
+			Script Execution Status	: FAIL
+			Failed at Step Number	: 26
+			*******************************************************
+
+Step 1		07/21/2022 15:22:53		PASS
+------------------------------------------------------------
+Description	: Verify element is clickable HomeLink
+Actual Result	: HomeLink is displayed and clickable
+
+
+Step 2		07/21/2022 15:22:54		PASS
+------------------------------------------------------------
+Description	: Verify click action on: getHomeLink
+Actual Result	: getHomeLink is clicked
+
+
+Step 3		07/21/2022 15:22:56		PASS
+------------------------------------------------------------
+Description	: Verify text is entered to JobsTitleField textbox
+Actual Result	: Text 'Registered Nurse' is entered in to JobsTitleField textbox
+
+
+Step 4		07/21/2022 15:23:00		PASS
+------------------------------------------------------------
+Description	: Verify click action on: SearchIcon
+Actual Result	: SearchIcon is clicked
+
+
+Step 5		07/21/2022 15:23:03		PASS
+------------------------------------------------------------
+Description	: Verify Registered Nurse (RN) or Licensed Practical Nurse (LPN)- Surgical Flooris displayed
+Actual Result	: Registered Nurse (RN) or Licensed Practical Nurse (LPN)- Surgical Floor is Displayed
+
+
+Step 6		07/21/2022 15:23:03		PASS
+------------------------------------------------------------
+Description	: Verify St. Elizabeth Healthcareis displayed
+Actual Result	: St. Elizabeth Healthcare is Displayed
+
+
+Step 7		07/21/2022 15:23:03		PASS
+------------------------------------------------------------
+Description	: Verify Lawrenceburg, IN, USis displayed
+Actual Result	: Lawrenceburg, IN, US is Displayed
+
+
+Step 8		07/21/2022 15:23:03		PASS
+------------------------------------------------------------
+Description	: Verify Jul 21, 2022is displayed
+Actual Result	: Jul 21, 2022 is Displayed
+
+
+Step 9		07/21/2022 15:23:03		PASS
+------------------------------------------------------------
+Description	: Verify click action on: Job Title
+Actual Result	: Job Title is clicked
+
+
+Step 10		07/21/2022 15:23:06		PASS
+------------------------------------------------------------
+Description	: Switch to :Registered Nurse (RN) Or Licensed Practical Nurse (LPN)- Surgical Floor job in Lawrenceburg, IN, US at St. Elizabeth Healthcare
+Actual Result	: Window is Swithced to Registered Nurse (RN) Or Licensed Practical Nurse (LPN)- Surgical Floor job in Lawrenceburg, IN, US at St. Elizabeth Healthcare
+
+
+Step 11		07/21/2022 15:23:06		PASS
+------------------------------------------------------------
+Description	: Verify element Facebook Icon is Displayed
+Actual Result	: Facebook Icon is Displayed
+
+
+Step 12		07/21/2022 15:23:06		PASS
+------------------------------------------------------------
+Description	: Verify element Twitter Icon is Displayed
+Actual Result	: Twitter Icon is Displayed
+
+
+Step 13		07/21/2022 15:23:06		PASS
+------------------------------------------------------------
+Description	: Verify element LinkedIn Icon is Displayed
+Actual Result	: LinkedIn Icon is Displayed
+
+
+Step 14		07/21/2022 15:23:06		PASS
+------------------------------------------------------------
+Description	: Verify element Apply Now Button is Displayed
+Actual Result	: Apply Now Button is Displayed
+
+
+Step 15		07/21/2022 15:23:06		PASS
+------------------------------------------------------------
+Description	: Verify Registered Nurse (RN) or Licensed Practical Nurse (LPN)- Surgical Flooris displayed
+Actual Result	: Registered Nurse (RN) or Licensed Practical Nurse (LPN)- Surgical Floor is Displayed
+
+
+Step 16		07/21/2022 15:23:07		PASS
+------------------------------------------------------------
+Description	: Verify St. Elizabeth Healthcareis displayed
+Actual Result	: St. Elizabeth Healthcare is Displayed
+
+
+Step 17		07/21/2022 15:23:07		PASS
+------------------------------------------------------------
+Description	: Verify Lawrenceburg, IN, USis displayed
+Actual Result	: Lawrenceburg, IN, US is Displayed
+
+
+Step 18		07/21/2022 15:23:07		PASS
+------------------------------------------------------------
+Description	: Verify Jul 21, 2022is displayed
+Actual Result	: Jul 21, 2022 is Displayed
+
+
+Step 19		07/21/2022 15:23:07		PASS
+------------------------------------------------------------
+Description	: Verify Descriptionis displayed
+Actual Result	: Description is Displayed
+
+
+Step 20		07/21/2022 15:23:07		PASS
+------------------------------------------------------------
+Description	: Verify This position qualifies for a NIGHT SHIFT BONUS as well as SHIFT DIFFERENTIAL!is displayed
+Actual Result	: This position qualifies for a NIGHT SHIFT BONUS as well as SHIFT DIFFERENTIAL! is Displayed
+
+
+Step 21		07/21/2022 15:23:07		PASS
+------------------------------------------------------------
+Description	: Verify Demonstrate respect, dignity, kindness and empathy in each encounter with all patients, families, visitors and other employees regardless of cultural background.is displayed
+Actual Result	: Demonstrate respect, dignity, kindness and empathy in each encounter with all patients, families, visitors and other employees regardless of cultural background. is Displayed
+
+
+Step 22		07/21/2022 15:23:07		PASS
+------------------------------------------------------------
+Description	: Verify is displayed
+Actual Result	:  is Displayed
+
+
+Step 23		07/21/2022 15:23:07		PASS
+------------------------------------------------------------
+Description	: Verify Other job searches for St. Elizabeth Healthcareis displayed
+Actual Result	: Other job searches for St. Elizabeth Healthcare is Displayed
+
+
+Step 24		07/21/2022 15:23:07		PASS
+------------------------------------------------------------
+Description	: Verify Other jobs in Lawrenceburgis displayed
+Actual Result	: Other jobs in Lawrenceburg is Displayed
+
+
+Step 25		07/21/2022 15:23:38		FAIL
+------------------------------------------------------------
+Description	: Verify text is present
+Actual Result	: NO SUCH ELEMENT: UNABLE TO LOCATE ELEMENT: {"METHOD":"XPATH","SELECTOR":"//*[@CLASS='WIDGET-TITLE']"}
+  (SESSION INFO: CHROME=103.0.5060.134)
+  (DRIVER INFO: CHROMEDRIVER=102.0.5005.61 (0E59BCC00CC4985CE39AD31C150065F159D95AD3-REFS/BRANCH-HEADS/5005@{#819}),PLATFORM=WINDOWS NT 10.0.22000 X86_64) 
+
+
+
+		-------->[ EXITING SCRIPT EXECUTION ]<--------
+
+
