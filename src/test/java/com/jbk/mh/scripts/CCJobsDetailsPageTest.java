@@ -32,10 +32,10 @@ public class CCJobsDetailsPageTest extends WebDriverBase{
 		ccJobDetailsPage.validateJobDetailsInfo();
 		ccJobDetailsPage.validateJobDetailedInfo();
 		ccJobDetailsPage.verifyJobBuckets();
-		//ccJobDetailsPage.verifySimilarJobs();
+		ccJobDetailsPage.verifySimilarJobs();
 		Page.switchToParentWindow();
 		Thread.sleep(3000);
-		Page.driver.close();		
+		//Page.driver.close();		
 		
 	}
 

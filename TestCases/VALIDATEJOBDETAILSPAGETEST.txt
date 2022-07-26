@@ -4,25 +4,30 @@ Verify element is clickable HomeLink
 Verify click action on: getHomeLink
 Verify text is entered to JobsTitleField textbox
 Verify click action on: SearchIcon
-Verify Nurse Practitioner or Physician Assistant - Urgent Care -is displayed
-Verify Ochsner Healthis displayed
-Verify Scott, LA, USis displayed
-Verify Jul 23, 2022is displayed
+Verify Nurse Educator - $10K Sign on Bonusis displayed
+Verify ValleyCare Medical Centeris displayed
+Verify New Almaden, CA, USis displayed
+Verify Jul 25, 2022is displayed
 Verify click action on: Job Title
-Switch to :Nurse Practitioner Or Physician Assistant - Urgent Care - job in Scott, LA, US at Ochsner Health
+Switch to :Nurse Educator - $10K Sign On Bonus job in New Almaden, CA, US at ValleyCare Medical Center
 Verify element Facebook Icon is Displayed
 Verify element Twitter Icon is Displayed
 Verify element LinkedIn Icon is Displayed
 Verify element Apply Now Button is Displayed
-Verify Nurse Practitioner or Physician Assistant - Urgent Care -is displayed
-Verify Ochsner Healthis displayed
-Verify Scott, LA, USis displayed
-Verify Jul 23, 2022is displayed
+Verify Nurse Educator - $10K Sign on Bonusis displayed
+Verify ValleyCare Medical Centeris displayed
+Verify New Almaden, CA, USis displayed
+Verify Jul 25, 2022is displayed
 Verify Descriptionis displayed
-Verify Job Type: FULL TIMEis displayed
-Verify Industry: Healthcareis displayed
-Verify Estimated Salary: $111,094 per yearis displayed
-Verify Other job searches for Ochsner Healthis displayed
-Verify Other jobs in Scottis displayed
-Switch to :Nurse Practitioner Or Physician Assistant - Urgent Care - job in Scott, LA, US at Ochsner Health
+Verify is displayed
+Verify The Clinical Nurse Educator collaborates with department leaders in the provision of safe and quality patient care and professional practice.  Function as an expert, practitioner, educator, leader and scientist.  They will support hospital initiatives to align with regulatory requirements, improve employee safety, patient safety, emergency response, and efficiencies. Support the clinical competence of employees through leading program initiatives, developing and teaching education programs such as clinical onboarding, in-service, and continuing education programs.  Utilize evidence-based practice while focusing on the knowledge and skills required for an employee to perform competently in their assigned area.  Develop professional and performance development based on departmental (service line) needs.  Participate in setting standards based on evidence-based medicine, best practices, and regulatory requirements.  Analyze quality measures, including process measures, patient and employee outcomes, for opportunities to improve and develop program curricula.  is displayed
+Verify  Essential Functions is displayed
+Verify Jobs in demandis displayed
+Verify Jobs in demandis displayed
+Verify Other job searches for ValleyCare Medical Centeris displayed
+Verify Similar Jobs:is displayed
+Verify Clinical Nurse Coordinator Med/Surg
+West Hills Hospital
+West Hills, CA, USis displayed
+Switch to :Nurse Educator - $10K Sign On Bonus job in New Almaden, CA, US at ValleyCare Medical Center
 

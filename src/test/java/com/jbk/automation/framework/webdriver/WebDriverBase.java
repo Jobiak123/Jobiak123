@@ -165,6 +165,7 @@ public class WebDriverBase {
 		// driverForThread.get().manage().window().maximize();
 		
 		return driverForThread.get();
+		
 	}
 	
 	
@@ -349,9 +350,8 @@ public class WebDriverBase {
 
 		if (driverForThread.get() != null) {
 			
-		//	getDriver().close();
-		 	driverForThread.remove();
-					
+			driverForThread.remove();
+			//getDriver().quit();
 			}
 		
 	}
