@@ -22,18 +22,23 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import com.jbk.automation.framework.reports.AtuReports;
 import com.jbk.automation.framework.util.Reporter;
 import com.jbk.automation.framework.util.WaitType;
+
+import junit.framework.Assert;
+
 import com.jbk.automation.framework.util.Reporter.TestStatus;
 
 public class Page {
 
+	public static String value="";	
 	public static WebDriver driver = WebDriverBase.getDriver();
 	public static WebDriverHelper webDriverHelper = new WebDriverHelper(driver);
 	
-	public static String baseURL = (String) WebDriverBase.context.getBean("ccEnvURL");
+	public static String envURL = (String) WebDriverBase.context.getBean("ccEnvURL");
+	public static String envJobURL = (String) WebDriverBase.context.getBean("ccEnvJobURL");
+	
 	WebElement webElement = null;
 
 	/* protected FrameworkServices frameworkServices; */
@@ -61,9 +66,10 @@ public class Page {
 			Reporter.LogEvent(TestStatus.FAIL, "Verify click action on: " + logMessage,
 					logMessage + " Should be clicked", catchException(exception));
 
+			driver.close();
 			AtuReports.failResults("Verify click action on: " + logMessage, "--", logMessage + " Should be clicked",
 					catchException(exception));
-
+			
 		}
 	}
 
@@ -89,9 +95,10 @@ public class Page {
 			Reporter.LogEvent(TestStatus.FAIL, "Verify click action on: " + logMessage,
 					logMessage + " Should be clicked", catchException(exception));
 
+			driver.close();
 			AtuReports.failResults("Verify click action on: " + logMessage, "--", logMessage + " Should be clicked",
 					catchException(exception));
-
+			
 		}
 	}
 
@@ -125,11 +132,11 @@ public class Page {
 			Reporter.LogEvent(TestStatus.FAIL, "Verify text is entered to " + logMessage + " textbox",
 					"Text '" + value + "' should be entered in to " + logMessage + " textbox",
 					catchException(exception));
-
+			driver.close();
 			AtuReports.failResults("Failed to Enter text in " + logMessage + " text Field", value,
 					"Text " + value + " should be entered in to " + logMessage + " text Field",
 					catchException(exception));
-
+			
 		}
 	}
 
@@ -154,9 +161,10 @@ public class Page {
 
 			Reporter.LogEvent(TestStatus.FAIL, "Clear test in: " + logMessage, logMessage + " text should be cleared",
 					catchException(exception));
+			driver.close();
 			AtuReports.failResults("Clear text in: " + logMessage, "--", logMessage + " text should be cleared",
 					catchException(exception));
-
+			
 		}
 	}
 
@@ -177,20 +185,21 @@ public class Page {
 			isElementDisplayed = pageElement.isDisplayed() || pageElement.isEnabled();
 			// FrameworkServices.logMessage(logMessage + " is Displayed in"
 			// + pageName);
-			AtuReports.passResults1("Verify element " + logMessage + " is Displayed", "--",
+			AtuReports.passResults1("Verify " + logMessage + " is Displayed", "--",
 					logMessage + " Should be Displayed ", logMessage + " is Displayed");
 
-			Reporter.LogEvent(TestStatus.PASS, "Verify element " + logMessage + " is Displayed",
+			Reporter.LogEvent(TestStatus.PASS, "Verify  " + logMessage + " is Displayed",
 					logMessage + " Should be Displayed ", logMessage + " is Displayed");
 
 		} catch (Exception exception) {
 
-			Reporter.LogEvent(TestStatus.FAIL, "Verify element " + logMessage + " is Displayed",
+			Reporter.LogEvent(TestStatus.FAIL, "Verify  " + logMessage + " is Displayed",
 					logMessage + " Should be Displayed ", catchException(exception));
 
+			driver.close();
 			AtuReports.failResults(logMessage + " is not Displayed in" + this.getClass().getSimpleName(), "--",
 					logMessage + " Should be Displayed  ", catchException(exception));
-
+		
 		}
 		return isElementDisplayed;
 
@@ -213,9 +222,11 @@ public class Page {
 		if (height > 0 || width > 0) {
 			Reporter.LogEvent(TestStatus.FAIL, "Verify element" + logMessage + " is not Displayed",
 					logMessage + " Should not be Displayed ", logMessage + " is Displayed");
-
+			driver.close();
 			AtuReports.failResults("Verify element " + logMessage + " is not Displayed", "--",
 					logMessage + " Should not be Displayed ", logMessage + " is Displayed");
+			
+			
 		} else {
 			isElementNotDisplayed = true;
 			AtuReports.passResults1("Verify element" + logMessage + " is not Displayed", "--",
@@ -253,9 +264,10 @@ public class Page {
 		if (size > 0) {
 			Reporter.LogEvent(TestStatus.FAIL, "Verify element" + logMessage + " is not Displayed",
 					logMessage + " Should not be Displayed ", logMessage + " is Displayed");
-
+			driver.close();
 			AtuReports.failResults(logMessage + " is not Displayed", "--", logMessage + " Should not be Displayed ",
 					logMessage + " is Displayed");
+			
 		} else {
 			isElementNotDisplayed = true;
 			AtuReports.passResults1("Verify element" + logMessage + " is not Displayed", "--",
@@ -278,7 +290,7 @@ public class Page {
 			windowname= driver.switchTo().window(parent).getTitle();
 			 System.out.println("Parent Window Title:" + windowname);
 			 
-			 AtuReports.passResults1("Switch to :" + windowname, "", "Window Should be Swithced to " + windowname,
+			 	AtuReports.passResults1("Switch to :" + windowname, "", "Window Should be Swithced to " + windowname,
 						"Window is Swithced to " + windowname);
 
 				Reporter.LogEvent(TestStatus.PASS, "Switch to :" + windowname, "Window Should be Swithced to " + windowname,
@@ -292,8 +304,10 @@ public class Page {
 
 				Reporter.LogEvent(TestStatus.FAIL, "Switch to :" + windowname, "Window Should be Swithced to " + windowname,
 						catchException(exception));
+				driver.close();
 				AtuReports.failResults("Failed to  switch to window on " + pageName, "", "Window Should be Swithced ",
 						catchException(exception));
+			
 			}
 			return windowname;
 
@@ -315,9 +329,10 @@ public class Page {
 		} catch (Exception exception) {
 			Reporter.LogEvent(TestStatus.FAIL, "Verify frame is switched to default content",
 					"Frame should be switched to default content", catchException(exception));
+			driver.close();
 			AtuReports.failResults("Verify frame is switched to default content", "",
 					"Frame should be switched to default content", "frame is not switched to default content");
-
+			
 		}
 
 	}
@@ -353,8 +368,10 @@ public class Page {
 
 			Reporter.LogEvent(TestStatus.FAIL, "Switch to :" + windowname, "Window Should be Swithced to " + windowname,
 					catchException(exception));
+			driver.close();
 			AtuReports.failResults("Failed to  switch to window on " + pageName, "", "Window Should be Swithced ",
 					catchException(exception));
+			
 		}
 		return windowname;
 	}
@@ -401,8 +418,10 @@ public class Page {
 
 			Reporter.LogEvent(TestStatus.FAIL, "Switch to :" + windowname, "Window Should be Swithced to " + windowname,
 					catchException(exception));
+			driver.close();
 			AtuReports.failResults("Failed to  switch to window on " + pageName, "", "Window Should be Swithced ",
 					catchException(exception));
+			
 		}
 		return windowname;
 	}
@@ -441,10 +460,10 @@ public class Page {
 		} catch (Exception exception) {
 			Reporter.LogEvent(TestStatus.FAIL, "Select: " + logMessage, logMessage + " Should be selected",
 					catchException(exception));
-
+			driver.close();
 			AtuReports.failResults("Failed to select : " + logMessage, value, logMessage + " Should be selected",
 					catchException(exception));
-
+			
 		}
 	}
 
@@ -457,8 +476,9 @@ public class Page {
 			Reporter.LogEvent(TestStatus.PASS, "Verify Selected Report ", expectedValue, actualValue);
 		} else {
 			Reporter.LogEvent(TestStatus.FAIL, "Verify Selected Report ", expectedValue, actualValue);
-
+			driver.close();
 			AtuReports.failResults("Verify Selected Report ", "--", expectedValue, actualValue);
+			
 		}
 
 	}
@@ -470,41 +490,84 @@ public class Page {
 			Select select = new Select(pageElement);
 
 			selectedValue = select.getFirstSelectedOption().getText();
+			
+			System.out.println("Values List::"+selectedValue);
+			
+			AtuReports.passResults1("Select: " +selectedValue + logMessage, value, logMessage +selectedValue + " should be selected",
+					logMessage  + selectedValue + "is selected");
+
+			Reporter.LogEvent(TestStatus.PASS, "Select: " +selectedValue + logMessage, logMessage +selectedValue + " should be selected",
+					logMessage  + selectedValue + "is selected");
 
 		} catch (Exception exception) {
 			Reporter.LogEvent(TestStatus.FAIL, "Get selected option: " + logMessage,
 					"Selected option should be returned", catchException(exception));
-
+			driver.close();
 			AtuReports.failResults("Get selected option: " + logMessage, "--", "Selected option should be returned",
 					catchException(exception));
-
+			
 		}
 		return selectedValue;
 	}
 
 	public static ArrayList<String> getAllValuesFromListBox(WebElement pageElement, String logMessage) {
+		
 		ArrayList<String> optionList = new ArrayList<String>();
 		try {
 
 			Select select = new Select(pageElement);
-
 			for (WebElement options : select.getOptions()) {
+			optionList.add(options.getText().trim());
+			System.out.println("List of Values ::"+options.getText());
+					
+			AtuReports.passResults1("Value:: " +options.getText() + logMessage, value, logMessage +options.getText() + " should be available",
+							logMessage  + options.getText() + "  is available");
 
-				optionList.add(options.getText().trim());
+			Reporter.LogEvent(TestStatus.PASS, "Value: " +options.getText() + logMessage, logMessage +options.getText() + " should be available",
+							logMessage  + options.getText() +  "is available");	
 			}
-
+			
 		} catch (Exception exception) {
 
 			Reporter.LogEvent(TestStatus.FAIL, "Get all values from the: " + logMessage,
 					"All values should be retuned form the " + logMessage, catchException(exception));
-
+			driver.close();
 			AtuReports.failResults("Get all values from the: " + logMessage, "--",
 					"All values should be retuned form the " + logMessage, catchException(exception));
-
+			
 		}
 		return optionList;
 	}
 
+
+ public static List<String> getAllValuesFromDropdownBox(WebElement pageElement, String logMessage) throws Exception{
+			
+			Select select = new Select(pageElement);
+			List<WebElement> options=select.getOptions();
+			List<String> optionValues = new ArrayList<String>();
+			for (WebElement option : options)
+					{
+			optionValues.add(option.getText());
+			System.out.println("List of Values ::"+option.getText());
+		 			
+			AtuReports.passResults1("Value:: " +option.getText() + logMessage, value, logMessage +option.getText() + " should be available",
+							logMessage  + option.getText() + "  is available");
+
+			Reporter.LogEvent(TestStatus.PASS, "Value: " +option.getText() + logMessage, logMessage +option.getText() + " should be available",
+							logMessage  + option.getText() +  "is available");	
+			}
+			
+			return optionValues;
+		
+	}
+
+
+	
+	
+	
+	
+	
+	
 	public static boolean switchToWindow(String windowTitle) {
 
 		boolean isWindowSelected = false;
@@ -525,7 +588,7 @@ public class Page {
 		} catch (Exception exception) {
 			AtuReports.failResults("Failed to switch to window : " + windowTitle, windowTitle,
 					" window " + windowTitle + " should be selected", catchException(exception));
-
+			
 		}
 		if (isWindowSelected)
 			AtuReports.passResults1("Switch to window : " + windowTitle, windowTitle,
@@ -533,7 +596,7 @@ public class Page {
 		else
 			AtuReports.failResults("Failed to switch to window : " + windowTitle, windowTitle,
 					" window " + windowTitle + " should be selected", windowTitle + " is not selected");
-
+		driver.close();
 		return isWindowSelected;
 	}
 
@@ -564,8 +627,10 @@ public class Page {
 				Reporter.LogEvent(TestStatus.FAIL, "Verify element text is disappeared " + logMessage,
 						logMessage + " should be disappeared ", catchException(e));
 
+				driver.close();
 				AtuReports.failResults("Verify element is disappeared " + logMessage, "--",
 						logMessage + " should be disappeared ", catchException(e));
+			
 			}
 			break;
 
@@ -590,19 +655,20 @@ public class Page {
 
 				webElement = webDriverHelper.waitForElementToBeClickable(pageElement, timeOut);
 				AtuReports.passResults1("Verify element is clickable " + logMessage, "--",
-						logMessage + " should be clickable ", logMessage + " is displayed and clickable");
+						logMessage + " should be displayed and clickable ", logMessage + " is displayed and clickable");
 
 				Reporter.LogEvent(TestStatus.PASS, "Verify element is clickable " + logMessage,
-						logMessage + " should be clickable ", logMessage + " is displayed and clickable");
+						logMessage + " should be displayed and clickable ", logMessage + " is displayed and clickable");
 
 			} catch (Exception e) {
 
 				Reporter.LogEvent(TestStatus.FAIL, "Verify element is clickable " + logMessage,
 						logMessage + " should be clickable ", catchException(e));
 
+				driver.close();
 				AtuReports.failResults("Verify element is clickable " + logMessage, "--",
 						logMessage + " should be clickable ", catchException(e));
-
+			
 			}
 			break;
 		case WAIT_FOR_ELEMENT_TO_BE_ENABLED:
@@ -611,20 +677,21 @@ public class Page {
 
 				webElement = webDriverHelper.waitForElementToBeEnabled(pageElement, timeOut);
 
-				AtuReports.passResults1("Verify element is enabled " + logMessage, "--",
+				AtuReports.passResults1("Verify "+ logMessage + " is enabled " , "--",
 						logMessage + " should be enabled ", logMessage + " is displayed and enabled");
 
-				Reporter.LogEvent(TestStatus.PASS, "Verify element is enabled " + logMessage,
+				Reporter.LogEvent(TestStatus.PASS, "Verify " + logMessage + " is enabled " ,
 						logMessage + " should be enabled ", logMessage + " is displayed and enabled");
 
 			} catch (Exception e) {
 
-				Reporter.LogEvent(TestStatus.FAIL, "Verify element is enabled " + logMessage,
+				Reporter.LogEvent(TestStatus.FAIL, "Verify " + logMessage + " is enabled " ,
 						logMessage + " should be enabled ", catchException(e));
 
-				AtuReports.failResults("Verify element is enabled " + logMessage, "--",
+				driver.close();
+				AtuReports.failResults("Verify " + logMessage + " is enabled " + logMessage, "--",
 						logMessage + " should be enabled ", catchException(e));
-
+			
 			}
 			break;
 		case WAIT_FOR_ELEMENT_TO_BE_DISPLAYED:
@@ -632,19 +699,20 @@ public class Page {
 			try {
 
 				webElement = webDriverHelper.waitForElementToBeDisplayed(pageElement, timeOut, logMessage);
-				AtuReports.passResults1("Verify element is displayed " + logMessage, "--",
+				AtuReports.passResults1("Verify " + logMessage + " is displayed " , "--",
 						logMessage + " should be displayed ", logMessage + " is displayed");
 
-				Reporter.LogEvent(TestStatus.PASS, "Verify element is displayed " + logMessage,
+				Reporter.LogEvent(TestStatus.PASS, "Verify " + logMessage + " is displayed " ,
 						logMessage + " should be displayed ", logMessage + " is displayed");
 
 			} catch (Exception e) {
 
-				Reporter.LogEvent(TestStatus.FAIL, "Verify element is displayed " + logMessage,
+				Reporter.LogEvent(TestStatus.FAIL, "Verify " + logMessage + " is displayed " ,
 						logMessage + " should be displayed ", catchException(e));
-
-				AtuReports.failResults("Verify element is displayed " + logMessage, "--",
+				driver.close();
+				AtuReports.failResults("Verify " + logMessage + " is displayed " + logMessage, "--",
 						logMessage + " should be displayed ", catchException(e));
+			
 			}
 			break;
 
@@ -664,9 +732,10 @@ public class Page {
 
 				Reporter.LogEvent(TestStatus.FAIL, "Verify element is disappeared " + logMessage,
 						logMessage + " should be disappeared ", catchException(e));
-
+				driver.close();
 				AtuReports.failResults("Verify element is disappeared " + logMessage, "--",
 						logMessage + " should be disappeared ", catchException(e));
+			
 			}
 			break;
 
@@ -686,9 +755,10 @@ public class Page {
 
 				Reporter.LogEvent(TestStatus.FAIL, "Verify element text is appeared " + logMessage,
 						logMessage + " should be appeared ", catchException(e));
-
+				driver.close();
 				AtuReports.failResults("Verify element is appeared " + logMessage, "--",
 						logMessage + " should be appeared ", catchException(e));
+			
 			}
 			break;
 
@@ -719,21 +789,22 @@ public class Page {
 
 			System.out.println("pageElement.getText() " + text);
 			if (isTextPresent) {
-				AtuReports.passResults1("Verify text " + logMessage, "--", logMessage, text);
+				AtuReports.passResults1("Verify " + text+ "  is present", "--", text+  "  should be present",text+  "   is present");
 
-				Reporter.LogEvent(TestStatus.PASS, "Verify text " + logMessage, logMessage, text);
+				Reporter.LogEvent(TestStatus.PASS, "Verify " + text + "  is present", text+  "  should be present",text+  "  is present");
 			} else {
-				Reporter.LogEvent(TestStatus.FAIL, "Verify text " + logMessage, logMessage, text);
-
-				AtuReports.failResults("Verify text " + logMessage, "--", logMessage, text);
+				Reporter.LogEvent(TestStatus.FAIL, "Verify " + text+ "  is present", text+  "  should be present",text+  "  is not present");
+				driver.close();
+				AtuReports.failResults("Verify " + text+ "  is present", "--", text+  "  should be present",text+  "   is not present");
+				
 			}
 
 		} catch (Exception e) {
 
-			Reporter.LogEvent(TestStatus.FAIL, "Verify text " + logMessage, logMessage, catchException(e));
-
+			Reporter.LogEvent(TestStatus.FAIL, "Verify " + logMessage, logMessage, catchException(e));
+			driver.close();
 			AtuReports.failResults("Verify text " + logMessage, "--", logMessage, catchException(e));
-
+			
 		}
 
 	}
@@ -747,8 +818,9 @@ public class Page {
 			Reporter.LogEvent(TestStatus.PASS, "Verify text " + searchText, searchText, searchText);
 		} else {
 			Reporter.LogEvent(TestStatus.FAIL, "Verify text " + searchText, searchText, searchText);
-
+			driver.close();
 			AtuReports.failResults("Verify text " + searchText, "--", searchText, searchText);
+			
 		}
 
 	}
@@ -768,16 +840,17 @@ public class Page {
 				Reporter.LogEvent(TestStatus.PASS, "Verify text " + logMessage, logMessage, text);
 			} else {
 				Reporter.LogEvent(TestStatus.FAIL, "Verify text " + logMessage, logMessage, text);
-
+				driver.close();
 				AtuReports.failResults("Verify text " + logMessage, "--", logMessage, text);
+				
 			}
 
 		} catch (Exception e) {
 
 			Reporter.LogEvent(TestStatus.FAIL, "Verify text " + logMessage, logMessage, catchException(e));
-
+			driver.close();
 			AtuReports.failResults("Verify text " + logMessage, "--", logMessage, catchException(e));
-
+			
 		}
 
 	}
@@ -898,9 +971,10 @@ public class Page {
 
 			Reporter.LogEvent(TestStatus.FAIL, "Verify webelement " + logMessage + " is present",
 					logMessage + " webelement should be present", catchException(exception));
-
+			driver.close();
 			AtuReports.failResults("Verify webelement " + logMessage + " is present", "--",
 					logMessage + " webelement should be present", catchException(exception));
+			
 		}
 
 		return element;
@@ -924,9 +998,10 @@ public class Page {
 
 			Reporter.LogEvent(TestStatus.FAIL, "Verify webelement " + logMessage + " is present",
 					logMessage + " webelement should be present", catchException(exception));
-
+			driver.close();
 			AtuReports.failResults("Verify webelement " + logMessage + " is present", "--",
 					logMessage + " webelement should be present", catchException(exception));
+			
 		}
 
 		return element;
@@ -939,9 +1014,11 @@ public class Page {
 		} catch (Exception exception) {
 			Reporter.LogEvent(TestStatus.FAIL, "Verify text is present", " Text should be present",
 					catchException(exception));
-
+			driver.close();
+			//Assert.assertTrue(false);
 			AtuReports.failResults("Verify text is present", "--", " Text should be present",
 					catchException(exception));
+			
 		}
 
 		return test;
@@ -955,8 +1032,9 @@ public class Page {
 			text = pageElement.getAttribute(attribute);
 		} catch (Exception exception) {
 			Reporter.LogEvent(TestStatus.FAIL, "Get text", " Get text", catchException(exception));
-
+			driver.close();
 			AtuReports.failResults("Get text", "--", " get text ", catchException(exception));
+			
 		}
 
 		return text;
@@ -978,9 +1056,10 @@ public class Page {
 						Reporter.LogEvent(TestStatus.PASS, "Verify "+pageElement.getText()+"is displayed",
 								pageElement.getText() + " text should be Displayed ",
 								pageElement.getText() + " is Displayed");
-
+						
 						return pageElement;
 					} else
+						
 						return null;
 				} catch (Exception ex) {
 
@@ -1051,10 +1130,10 @@ public class Page {
 
 			Reporter.LogEvent(TestStatus.FAIL, "Verify text is disappeared " + text, text + " should disappear ",
 					catchException(e));
-
+			driver.close();
 			AtuReports.failResults("Verify text is disappeared " + text, "--", text + " should disappear ",
 					catchException(e));
-
+			
 		}
 	}
 
@@ -1076,10 +1155,10 @@ public class Page {
 
 			Reporter.LogEvent(TestStatus.FAIL, "Verify " + logMessage + " is draged", logMessage + " should be draged",
 					catchException(exception));
-
+			driver.close();
 			AtuReports.failResults("Verify " + logMessage + " is draged", logMessage, logMessage + " should be draged",
 					catchException(exception));
-
+			
 		}
 
 		return val;
@@ -1105,10 +1184,10 @@ public class Page {
 
 			Reporter.LogEvent(TestStatus.FAIL, "Verify click action on: " + logMessage,
 					logMessage + " Should be clicked", catchException(exception));
-
+			driver.close();
 			AtuReports.failResults("Verify click action on: " + logMessage, "--", logMessage + " Should be clicked",
 					catchException(exception));
-
+			
 		}
 
 	}
@@ -1128,10 +1207,10 @@ public class Page {
 		} catch (Exception exception) {
 			Reporter.LogEvent(TestStatus.FAIL, "Select: " + logMessage, logMessage + " Should be selected",
 					catchException(exception));
-
+			driver.close();
 			AtuReports.failResults("Failed to select : " + logMessage, selectValue, logMessage + " Should be selected",
 					catchException(exception));
-
+			
 		}
 
 	}
@@ -1152,10 +1231,10 @@ public class Page {
 
 			Reporter.LogEvent(TestStatus.FAIL, "Verify modal dialog is closed", "Modal dialog should be closed",
 					catchException(exception));
-
+			driver.close();
 			AtuReports.failResults("Verify modal dialog is closed", "--", "should be draged",
 					catchException(exception));
-
+			
 		}
 
 	}
@@ -1182,10 +1261,10 @@ public class Page {
 
 			Reporter.LogEvent(TestStatus.FAIL, "Select " + logMessage, logMessage + "should be Select",
 					catchException(exception));
-
+			driver.close();
 			AtuReports.failResults("Select " + logMessage, "--", logMessage + "should be Select",
 					catchException(exception));
-
+			
 		}
 	}
 
@@ -1200,6 +1279,7 @@ public class Page {
 			Reporter.LogEvent(TestStatus.FAIL, "Verify PageSource", "Get the page source", catchException(exception));
 
 			AtuReports.failResults("Verify PageSource", "--", "Get the page source", catchException(exception));
+			
 		}
 
 		return pageSource;
@@ -1222,15 +1302,16 @@ public class Page {
 	public static void closeChildWindow() {
 		try {
 
-			driver.close();
+			
 		}
 
 		catch (Exception exception) {
 			Reporter.LogEvent(TestStatus.FAIL, "Verify child window is closed", "Child window should be closed",
 					catchException(exception));
-
+			driver.close();
 			AtuReports.failResults("Verify child window is closed", "--", "Child window should be closed",
 					catchException(exception));
+			
 		}
 
 	}
@@ -1248,19 +1329,20 @@ public class Page {
 			} else {
 				Reporter.LogEvent(TestStatus.FAIL, "Verify" + logMessage + " is disabled",
 						logMessage + " should be disabled", logMessage + " is Enabled");
-
+				driver.close();
 				AtuReports.failResults("Verify" + logMessage + " is disabled", "--", logMessage + " should be disabled",
 						logMessage + " is Enabled");
+				
 			}
 
 		} catch (Exception e) {
 
 			Reporter.LogEvent(TestStatus.FAIL, "Verify" + logMessage + " is disabled",
 					logMessage + " should be disabled", catchException(e));
-
+			driver.close();
 			AtuReports.failResults("Verify" + logMessage + " is disabled", "--", logMessage + " should be disabled",
 					catchException(e));
-
+			
 		}
 
 	}
@@ -1291,9 +1373,10 @@ public class Page {
 				result = false;
 				Reporter.LogEvent(TestStatus.FAIL, "Verify" + logMessage + " is enabled",
 						logMessage + " should be enabled", logMessage + " is Disabled");
-
+				driver.close();
 				AtuReports.failResults("Verify" + logMessage + " is enabled", "--", logMessage + " should be enabled",
 						logMessage + " is Disabled");
+				
 			}
 
 		} catch (Exception e) {
@@ -1301,10 +1384,10 @@ public class Page {
 			result = false;
 			Reporter.LogEvent(TestStatus.FAIL, "Verify" + logMessage + " is enabled", logMessage + " should be enabled",
 					catchException(e));
-
+			driver.close();
 			AtuReports.failResults("Verify" + logMessage + " is enabled", "--", logMessage + " should be enabled",
 					catchException(e));
-
+			
 		}
 
 		return result;
@@ -1393,16 +1476,17 @@ public class Page {
 				Reporter.LogEvent(TestStatus.PASS, "Verify title " + expectedTitle, expectedTitle, actualTitle);
 			} else {
 				Reporter.LogEvent(TestStatus.FAIL, "Verify title " + expectedTitle, expectedTitle, actualTitle);
-
+				driver.close();
 				AtuReports.failResults("Verify title " + expectedTitle, "--", expectedTitle, actualTitle);
+				
 			}
 
 		} catch (Exception e) {
 
 			Reporter.LogEvent(TestStatus.FAIL, "Verify title " + expectedTitle, expectedTitle, catchException(e));
-
+			driver.close();
 			AtuReports.failResults("Verify title " + expectedTitle, "--", expectedTitle, catchException(e));
-
+			
 		}
 	}
 
@@ -1436,7 +1520,7 @@ public class Page {
 					System.out.println(originalHandle + "originalHandle");
 
 					driver.switchTo().window(handle);
-					driver.close();
+					
 				}
 			}
 			driver.switchTo().window(originalHandle);
@@ -1494,16 +1578,17 @@ public class Page {
 		} catch (Exception e) {
 			AtuReports.failResults("Verify Mouse hover action", "--", "Should be able to hover",
 					"Mouse hover is not success: " + catchException(e));
+			driver.close();
 			Reporter.LogEvent(TestStatus.FAIL, "Verify Mouse hover action", "Should be able to hover",
 					catchException(e));
-
+			
 		}
 	}
 
 	/**
 	 * This method will return date in required format
 	 * 
-	 * @author rciddagoni
+	 * @author syalavarthi
 	 * @param String   formatType
 	 * @param Calendar cal
 	 * @return String
@@ -1517,7 +1602,7 @@ public class Page {
 	/**
 	 * This method will return date adding given months
 	 * 
-	 * @author rciddagoni
+	 * @author syalavarthi
 	 * @param int monthNumber
 	 * @return Calendar
 	 */
@@ -1591,7 +1676,9 @@ public class Page {
 			Reporter.LogEvent(TestStatus.PASS, "Verify Url contains" + url, url, currentURL);
 		} else {
 			Reporter.LogEvent(TestStatus.FAIL, "Verify Url " + url, url, currentURL);
+			driver.close();
 			AtuReports.failResults("Verify Url " + url, "--", url, currentURL);
+			
 		}
 
 	}
@@ -1622,14 +1709,18 @@ public class Page {
 			}
 		} catch (Exception e) {
 			Reporter.LogEvent(TestStatus.FAIL, "Verify switch window to Url " + url, url, catchException(e));
+			driver.close();
 			AtuReports.failResults("Verify switch window to Url " + url, "--", url, catchException(e));
+			
 		}
 		if (flag) {
 			AtuReports.passResults1("Verify switch window to Url " + url, "--", url, "Switched to url");
 			Reporter.LogEvent(TestStatus.PASS, "Verify switch window to Url " + url, url, "Switched to url");
 		} else {
 			Reporter.LogEvent(TestStatus.FAIL, "Verify switch window to Url " + url, url, "Unable to Switch to url");
+			driver.close();
 			AtuReports.failResults("Verify switch window to Url " + url, "--", url, "Unable to Switch to url");
+			
 		}
 
 	}
@@ -1640,9 +1731,9 @@ public class Page {
 		if (findText) {
 
 			Reporter.LogEvent(TestStatus.FAIL, "Verify invisible text " + searchText, searchText, searchText);
-
+			driver.close();
 			AtuReports.failResults("Verify invisible text " + searchText, "--", searchText, searchText);
-
+			
 		} else {
 			AtuReports.passResults1("Verify invisible text " + searchText, "--", searchText, searchText);
 
@@ -1686,8 +1777,9 @@ public class Page {
 			Reporter.LogEvent(TestStatus.PASS, "Verify text " + logMessage, expected, actual);
 		} else {
 			Reporter.LogEvent(TestStatus.FAIL, "Verify text " + logMessage, expected, actual);
-
+			driver.close();
 			AtuReports.failResults("Verify text " + logMessage, "--", expected, actual);
+			
 		}
 	}
 
@@ -1700,7 +1792,7 @@ public class Page {
 		List<WebElement> options = select.getOptions();
 		List<String> optionValues = new ArrayList<String>();
 		for (WebElement option : options) {
-			optionValues.add(option.getText());
+		optionValues.add(option.getText());
 		}
 		return optionValues;
 	}
@@ -1724,9 +1816,10 @@ public class Page {
 
 		} else {
 			currentURL = "Url";
+			driver.close();
 			AtuReports.failResults("Get Current Application Url", "--", "Shoud get Live Application Url",
 					currentURL + "is Empty");
-
+			
 		}
 
 		return currentURL;
@@ -1759,16 +1852,17 @@ public class Page {
 				Reporter.LogEvent(TestStatus.PASS, "Verify text " + logMessage, value, text);
 			} else {
 				Reporter.LogEvent(TestStatus.FAIL, "Verify text " + logMessage, value, text);
-
+				driver.close();
 				AtuReports.failResults("Verify text " + logMessage, "--", value, text);
+				
 			}
 
 		} catch (Exception e) {
 
 			Reporter.LogEvent(TestStatus.FAIL, "Verify text " + logMessage, value, catchException(e));
-
+			driver.close();
 			AtuReports.failResults("Verify text " + logMessage, "--", value, catchException(e));
-
+			
 		}
 
 	}
@@ -1781,11 +1875,13 @@ public class Page {
 			Reporter.LogEvent(TestStatus.FAIL, logMessage + " Date Format " + inDate,
 					logMessage + ": " + inDate + " Date Format should be valid " + format,
 					catchException(e) + " Date Format is not valid " + format);
-
+			driver.close();
 			AtuReports.failResults("Date Format " + inDate, "--",
 					logMessage + ": " + inDate + " Date Format should be valid " + format,
 					catchException(e) + " Date Format is not valid " + format);
+			
 			return false;
+			
 		}
 		AtuReports.passResults1(logMessage + ": " + "Date Format " + inDate, "--",
 				logMessage + ": " + inDate + " Date Format is valid " + format,
@@ -1820,17 +1916,18 @@ public class Page {
 				Reporter.LogEvent(TestStatus.PASS, "Verify text is not present" + logMessage, logMessage, text);
 			} else {
 				Reporter.LogEvent(TestStatus.FAIL, "Verify text is not present" + logMessage, logMessage, text);
-
+				driver.close();
 				AtuReports.failResults("Verify text is not present" + logMessage, "--", logMessage, text);
+				
 			}
 
 		} catch (Exception e) {
 
 			Reporter.LogEvent(TestStatus.FAIL, "Verify text is not present " + logMessage, logMessage,
 					catchException(e));
-
+			driver.close();
 			AtuReports.failResults("Verify text is not present " + logMessage, "--", logMessage, catchException(e));
-
+			
 		}
 
 	}
@@ -1876,9 +1973,10 @@ public class Page {
 			Reporter.LogEvent(TestStatus.FAIL, " Date Format " + inDate,
 					inDate + " Date Format should be valid " + format,
 					catchException(e) + " Date Format is not valid " + format);
-
+			driver.close();
 			AtuReports.failResults("Date Format " + inDate, "--", inDate + " Date Format should be valid " + format,
 					catchException(e) + " Date Format is not valid " + format);
+			
 		}
 		return date;
 	}
@@ -1891,9 +1989,10 @@ public class Page {
 		} catch (Exception e) {
 			Reporter.LogEvent(TestStatus.FAIL, " Date Format " + date, date + " Date Format should be valid " + format,
 					catchException(e) + " Date Format is not valid " + format);
-
+			driver.close();
 			AtuReports.failResults("Date Format " + date, "--", date + " Date Format should be valid " + format,
 					catchException(e) + " Date Format is not valid " + format);
+			
 		}
 		return cal;
 	}
@@ -1920,9 +2019,10 @@ public class Page {
 		} else {
 			Reporter.LogEvent(TestStatus.FAIL, "Verify Background color " + logMessage,
 					"Background Color Should be " + color, "Color is " + actualColor);
-
+			driver.close();
 			AtuReports.failResults("Verify Background color " + logMessage, "--", "Background Color Should be " + color,
 					"Background Color is " + actualColor);
+			
 		}
 
 	}
@@ -1938,9 +2038,10 @@ public class Page {
 		} else {
 			Reporter.LogEvent(TestStatus.FAIL, "Verify  color " + logMessage, " Color Should be " + color,
 					"Color is " + actualColor);
-
+			driver.close();
 			AtuReports.failResults("Verify  color " + logMessage, "--", " Color Should be " + color,
 					" Color is " + actualColor);
+			
 		}
 
 	}
@@ -1957,9 +2058,10 @@ public class Page {
 		} else {
 			Reporter.LogEvent(TestStatus.FAIL, "Verify  Font " + logMessage, " Font Should be " + format,
 					"Font is " + actualFont);
-
+			driver.close();
 			AtuReports.failResults("Verify  Font " + logMessage, "--", " Font Should be " + format,
 					" Font is " + actualFont);
+			
 		}
 	}
 

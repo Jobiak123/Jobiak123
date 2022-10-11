@@ -5,6 +5,9 @@ package com.jbk.automation.framework.factory;
 
 import org.openqa.selenium.support.PageFactory;
 
+import com.jbk.mh.pages.CCAboutPage;
+import com.jbk.mh.pages.CCBlogPage;
+import com.jbk.mh.pages.CCContactPage;
 import com.jbk.mh.pages.CCHomePage;
 import com.jbk.mh.pages.CCJobDetailsPage;
 import com.jbk.mh.pages.CCJobsPage;
@@ -27,6 +30,17 @@ public class WebPageFactory implements BasePageFactory {
 		  
 		  return PageFactory.initElements(Page.driver, CCJobDetailsPage.class); }
 
+     public CCAboutPage getCCAboutPage() {
+		  
+		  return PageFactory.initElements(Page.driver, CCAboutPage.class); }
+     
+     public CCBlogPage getCCBlogPage() {
+		  
+		  return PageFactory.initElements(Page.driver, CCBlogPage.class); }
+     
+     public CCContactPage getCCContactPage() {
+		  
+		  return PageFactory.initElements(Page.driver, CCContactPage.class); }
 	  
 	  
 	  

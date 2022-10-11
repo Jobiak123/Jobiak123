@@ -14,18 +14,110 @@
 	 <!-- preserve-order="false" -->
 
 		 <parameter name="browsername" value="chrome" /> 
-		 <parameter name="browserversion" value="103.0.5060" /> 
+		 <parameter name="browserversion" value="104.0.5112" /> 
 	 	<parameter name="platform" value="windows" />
 	 
 	 
-	 
-
 		<classes>
-			<class name="com.jbk.mh.scripts.CCJobsDetailsPageTest">
+			<class name="com.jbk.mh.scripts.CCHomePageTest">
 				<methods>
-					<include name="validateJobDetailsPageTest" /> 
+					<include name="verifyLoadingHomePage"/>
+					<include name="verifyPresenceofTabs"/>
+					<include name="verifyJobsAvailableHeader"/>
+					<include name="verifyTagLine"/>
+					<include name="verifySearchFields"/>
+					<include name="verifyLocationAutoPopulateValue"/>
+					<include name="verifyMilesDropDownValues"/>
+					<include name="verifyTrendindSearches"/>
+					<include name="verifyTrendingSearchLink"/>
+					<include name="verifyViewMoreJobsLink"/>
+					<include name="verifyCompaniesScrolling"/>
+					<include name="verifyViewMoreCompanyJobsLink"/>
+					<include name="verifyJobsSearchByLocation"/>
+					<include name="verifyJobsSearchByTitle"/>
+					<include name="verifyFacebookIconPresence"/>
+					<include name="verifyInstagramIconPresence"/>
+					<include name="verifyFacebookNavigation"/>
+					<include name="verifyInstagramNavigation"/>
+					<include name="verifyPrivacyPolicyNavigation"/>
+					<include name="verifyCookiePolicyNavigation"/> 
+                    <include name="verifyTermsOfServiceNavigation"/>
+                    <include name="verifyCopyRightFooter"/>
 				</methods>
-			</class>
+	</class>
+	<class name="com.jbk.mh.scripts.CCJobsPageTest">
+				<methods>
+					<include name="verifyJobsPageNavigation"/>
+					<include name="verifySearchFields"/>
+					<include name="verifyLocationAutoPopulateValue"/>
+					<include name="verifyJobsAvailableHeader"/>
+					<include name="verifyDisplayLatestJobs"/>
+					<include name="verifyDisplayJobDetails"/>
+					<include name="verifyViewApplyButton"/>
+					<include name="verifyMilesDropDownValues"/>
+					<include name="verifyJobsSearchByLocation"/>
+					<include name="verifyJobsSearchByTitle"/>
+					<include name="verifyFacebookIconPresence"/>
+					<include name="verifyInstagramIconPresence"/>
+					<include name="verifyFacebookNavigation"/>
+					<include name="verifyInstagramNavigation"/>
+					<include name="verifyPrivacyPolicyNavigation"/>
+					<include name="verifyCookiePolicyNavigation"/> 
+                    <include name="verifyTermsOfServiceNavigation"/>
+                    <include name="verifyCopyRightFooter"/>
+				</methods>
+	</class>
+	<class name="com.jbk.mh.scripts.CCAboutPageTest">
+				<methods>
+					<include name="verifyAboutPageNavigation"/>
+					<include name="verifyAbouttPageHeader"/>
+					<include name="verifyAboutPageLabel"/>
+					<include name="verifyFacebookIconPresence"/>
+					<include name="verifyInstagramIconPresence"/>
+					<include name="verifyFacebookNavigation"/>
+					<include name="verifyInstagramNavigation"/>
+					<include name="verifyPrivacyPolicyNavigation"/>
+					<include name="verifyCookiePolicyNavigation"/> 
+                    <include name="verifyTermsOfServiceNavigation"/>
+                    <include name="verifyCopyRightFooter"/>
+				</methods>
+	</class>
+	<class name="com.jbk.mh.scripts.CCBlogPageTest">
+				<methods>
+					<include name="verifyBlogPageNavigation"/>
+					<include name="verifyBlogPageHeader"/>
+					<include name="verifyReadArticleLinkPresence"/>
+					<include name="verifyReadArticleLinkNavigation"/>
+					<include name="verifyFacebookIconPresence"/>
+					<include name="verifyInstagramIconPresence"/>
+					<include name="verifyFacebookNavigation"/>
+					<include name="verifyInstagramNavigation"/>
+					<include name="verifyPrivacyPolicyNavigation"/>
+					<include name="verifyCookiePolicyNavigation"/> 
+                    <include name="verifyTermsOfServiceNavigation"/>
+                    <include name="verifyCopyRightFooter"/>
+				</methods>
+	</class>
+	<class name="com.jbk.mh.scripts.CCContactPageTest">
+				<methods>
+					<include name="verifyContactPageNavigation"/>
+					<include name="verifyContactPageHeader"/>
+					<include name="verifyContactUsDetails"/>
+					<include name="verifyEnterContactFirstName"/>
+					<include name="verifyEnterContactLastName"/>
+					<include name="verifyEnterContactEmail"/>
+					<include name="verifyContactUsDetailsSubmission"/>
+					<include name="verifyFacebookIconPresence"/>
+					<include name="verifyInstagramIconPresence"/>
+					<include name="verifyFacebookNavigation"/>
+					<include name="verifyInstagramNavigation"/>
+					<include name="verifyPrivacyPolicyNavigation"/>
+					<include name="verifyCookiePolicyNavigation"/> 
+                    <include name="verifyTermsOfServiceNavigation"/>
+                    <include name="verifyCopyRightFooter"/>
+				</methods>
+   </class>
+	
 		</classes>
 	
 		</test>

@@ -7,11 +7,14 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
 import java.util.ResourceBundle;
 //import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeUnit;
@@ -41,6 +44,7 @@ import com.jbk.automation.framework.factory.BasePageFactory;
 import com.jbk.automation.framework.factory.WebPageFactory;
 import com.jbk.automation.framework.reports.AtuReports;
 import com.jbk.automation.framework.util.BrowserType;
+import com.jbk.automation.framework.util.DBUtil;
 import com.jbk.automation.framework.util.ExcelService;
 import com.jbk.automation.framework.util.Reporter;
 import com.jbk.automation.framework.util.Reporter.TestStatus;
@@ -60,15 +64,15 @@ public class WebDriverBase {
 	public BasePageFactory pageFactory;
 	WebDriver driver;
 
-	private JdbcTemplate ccJdbcTemplate = null;
+	private static JdbcTemplate ccJdbcTemplate = null;
 
 	public static ApplicationContext context = null;
 
-	public ApplicationContext getContext() {
+	public static ApplicationContext getContext() {
 		return context;
 	}
 
-	public JdbcTemplate getCCJdbcTemplate() {
+	public static JdbcTemplate getCCJdbcTemplate() {
 		return ccJdbcTemplate;
 	}
 
@@ -76,7 +80,7 @@ public class WebDriverBase {
 
 	
 	
-	  public BasePageFactory getPageFactory() {
+   public BasePageFactory getPageFactory() {
 	  
 			/*
 			 * if (null == pageFactory) { pageFactory =
@@ -123,45 +127,50 @@ public class WebDriverBase {
 
 	}
 
-	@BeforeTest(alwaysRun = true)
-	@Parameters({ BROWSER_NAME, "browserversion", "platform" })
-	public static void setUpTest(String browserName, String browserVersion, String platform) {
-		// com.cc.automation.framework.atuReports.setAuthorInfoForReports();
-		for (BrowserType browser : BrowserType.values()) {
-			if (browser.toString().toLowerCase().equals(browserName.toLowerCase())) {
-				browserType = browser;
-				break;
-			}
-		}
-
-	}
-
 	
-	@BeforeMethod(alwaysRun = true)
-	public void setUp(ITestContext ic, Method method) throws IOException {
-		// com.cc.automation.framework.atuReports.setAuthorInfoForReports();
-	  //  Runtime.getRuntime().exec("taskkill /F /IM iexplore.exe");
-	//	driver = loadWebDriver();
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\ADMIN\\Downloads\\chromedriver_win32\\chromedriver.exe");
-		ChromeDriver driver = new ChromeDriver(new ChromeOptions());
-       // driver.manage().window().maximize();
-		driverForThread.set(driver);
-		Page.driver = driverForThread.get();
-		ATUReports.setWebDriver(driverForThread.get());
-
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		System.out.println("method.getName() - " + method.getName());
-		System.out.println("ic.getClass().getName() - " + this.getClass().getName());
-		// com.util.atuReports.setAuthorInfoForReports();
-		// driverForThread.set(loadWebDriver());
-		new Reporter(method.getName(),
-		Reporter.getDateFormat(Reporter.vDatetype8));
-		Reporter.stepCount = 1;
-
-	}
-
-	public static WebDriver getDriver() {
+	/*
+	 * @BeforeTest(alwaysRun = true)
+	 * 
+	 * @Parameters({ BROWSER_NAME, "browserversion", "platform" }) public static
+	 * void setUpTest(String browserName, String browserVersion, String platform) {
+	 * 
+	 * for (BrowserType browser : BrowserType.values()) {
+	 * if(browser.toString().toLowerCase().equals(browserName.toLowerCase())) {
+	 * browserType = browser; break; } }
+	 * 
+	 * }
+	 * 
+	 * 
+	 */	
+	
+		
+		  @BeforeMethod(alwaysRun = true) 
+		  public void setUp(ITestContext ic, Method method) throws IOException { //
+		 //  Runtime.getRuntime().exec("taskkill /F /IM iexplore.exe"); // driver =
+		 // loadRemoteWebDriver();
+		  
+		  System.setProperty("webdriver.chrome.driver", "C:\\Users\\ADMIN\\Downloads\\chromedriver_win32\\chromedriver.exe");
+		  ChromeOptions options =new ChromeOptions(); 
+		 ChromeDriver driver = new ChromeDriver(options); 
+		  driver.manage().window().maximize();
+		 
+		  driverForThread.set(driver);
+		  Page.driver = driverForThread.get();
+		  ATUReports.setWebDriver(driverForThread.get());
+		  
+		  driver.manage().window().maximize();
+		  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		  System.out.println("method.getName() - " + method.getName());
+		  System.out.println("ic.getClass().getName() - " + this.getClass().getName());
+		 // driverForThread.set(loadWebDriver()); 
+		  new Reporter(method.getName(),
+		  Reporter.getDateFormat(Reporter.vDatetype8)); 
+		  Reporter.stepCount = 1;
+		  
+		  }
+		 
+	
+	  public static WebDriver getDriver() {
 		// driverForThread.get().manage().window().maximize();
 		
 		return driverForThread.get();
@@ -249,6 +258,58 @@ public class WebDriverBase {
 	}
 
 
+	@DataProvider(name = "CCGFJDataValidations")
+	public Iterator<Object[]> ccGFJDataProvider() {
+
+		 List<Object[]> ccData = new ArrayList<Object[]>();
+		
+		 DBUtil dbutil = ((DBUtil)getContext().getBean("dbUtil"));
+		 List<Map<String,Object>> dbList = dbutil.getRows(getCCJdbcTemplate(),DBUtil.getNamedQuery("getCCGfjJobs"));
+		 
+		 for(Map<String, Object> map :dbList)
+		 {
+			 Object value= map.get("submittedUrl"); 
+			  System.out.println( "Submitted URL ::" + value); 
+			  Object[] obj = new Object[1]; 
+			  obj[0] = value;
+			 
+		      ccData.add(obj);
+	        //  System.out.println("After For Loop");
+	           
+		 }
+			//   System.out.println("In After  Main For Loop");
+	        //   System.out.println("Before return "+ccData.size());
+			return ccData.iterator();
+			
+	}	
+
+	
+	@DataProvider(name = "CCNonGFJDataValidations")
+	public Iterator<Object[]> ccNonGFJDataProvider() {
+
+		 List<Object[]> ccData = new ArrayList<Object[]>();
+		
+		 DBUtil dbutil = ((DBUtil)getContext().getBean("dbUtil"));
+		 List<Map<String,Object>> dbList = dbutil.getRows(getCCJdbcTemplate(),DBUtil.getNamedQuery("getCCNonGfjJobs"));
+		 
+		 for(Map<String, Object> map :dbList)
+		 {
+			 Object value= map.get("uniqueid"); 
+			  System.out.println( "Unique Id ::" + value); 
+			  Object[] obj = new Object[1]; 
+			  obj[0] = value;
+			 
+		      ccData.add(obj);
+	        //  System.out.println("After For Loop");
+	           
+		 }
+			//   System.out.println("In After  Main For Loop");
+	        //   System.out.println("Before return "+ccData.size());
+			return ccData.iterator();
+			
+	}	
+
+
 
 	public Iterator<Object[]> testDataprovider(String dashboardName, String module) {
 
@@ -257,106 +318,55 @@ public class WebDriverBase {
 		
 	}
 
-	
-	/*
-	 * @AfterMethod(alwaysRun = true) public void tearDown(ITestResult
-	 * paramITestResult) throws IOException { System.out.println("@AfterMethod"); //
-	 * AtuReports.setAuthorInfoForReports(); String browserName =
-	 * paramITestResult.getAttribute(Platform.BROWSER_NAME_PROP).toString(); if
-	 * (browserName != null && browserName.equalsIgnoreCase("Unknown")) {
-	 * paramITestResult.setAttribute("BrowserName", "Chrome");
-	 * paramITestResult.setAttribute("BrowserVersion", "v103.0"); }
-	 * 
-	 * String finalScriptStatus;
-	 * 
-	 * System.out .println("---------------------" +
-	 * paramITestResult.getTestContext().getFailedTests().toString()); String sTemp
-	 * = paramITestResult.getTestContext().getFailedTests().toString();
-	 * 
-	 * 
-	 * 
-	 * Reporter.updateReports(Reporter.updateValue.tEndTime, "", "");
-	 * Reporter.updateReports( Reporter.updateValue.execTime, formatIntoHHMMSS(
-	 * Calendar.getInstance().getTimeInMillis() - vScriptStartTime).toString(), "");
-	 * Reporter.updateReports(Reporter.updateValue.totalSteps, "", "");
-	 * 
-	 * if (!sTemp.contains("FAILURE")) { finalScriptStatus = "PASS";
-	 * Reporter.updateReports(Reporter.updateValue.execStatus, "",
-	 * finalScriptStatus); Reporter.updateReports(Reporter.updateValue.failedStepNo,
-	 * "", finalScriptStatus); // REPORTER.takeScreenShot(finalScriptStatus);
-	 * //Click Logout // COMMON_METHODS.clickElement(getTestObject("OL_9"));
-	 * Reporter.LogEvent(TestStatus.INFO, "", "",
-	 * "-------->[ End Of Script Execution ]<--------");
-	 * 
-	 * } else { finalScriptStatus = "FAIL";
-	 * Reporter.updateReports(Reporter.updateValue.execStatus, "",
-	 * finalScriptStatus); Reporter.updateReports(Reporter.updateValue.failedStepNo,
-	 * "", finalScriptStatus); }
-	 * 
-	 * // Rename the result log Reporter.RenameResultLog(finalScriptStatus);
-	 * 
-	 * if (driverForThread.get() != null) { driver.quit(); driverForThread.remove();
-	 * 
-	 * } //Runtime.getRuntime().exec("taskkill /F /IM iexplore.exe"); //
-	 * paramITestResult. }
-	 */
-	
-	
-	@AfterMethod(alwaysRun = true)
-	public void tearDown(ITestResult paramITestResult) throws IOException {
-		System.out.println("@AfterMethod");
-		// AtuReports.setAuthorInfoForReports();
-		String browserName = paramITestResult.getAttribute(Platform.BROWSER_NAME_PROP).toString();
 		
-		System.out.println("steps count >>> "+Reporter.stepCount);
-		System.out.println("total steps count >>> "+Reporter.updateValue.totalSteps.ordinal());
-		
-		if(Reporter.stepCount >0){
-		if (browserName != null && browserName.equalsIgnoreCase("Unknown")) {
-			paramITestResult.setAttribute("BrowserName", "Chrome");
-			paramITestResult.setAttribute("BrowserVersion", "v103.0");
-		}
-
-		String finalScriptStatus;
-		String sTemp = paramITestResult.getTestContext().getFailedTests()
-				.toString();
-
-		Reporter.updateReports(Reporter.updateValue.tEndTime, "", "");
-		Reporter.updateReports(Reporter.updateValue.execTime,formatIntoHHMMSS(Calendar.getInstance().getTimeInMillis()- vScriptStartTime).toString(), "");
-		Reporter.updateReports(Reporter.updateValue.totalSteps, "", "");
-
-		if (!sTemp.contains("FAILURE")) {
-			finalScriptStatus = "PASS";
-			Reporter.updateReports(Reporter.updateValue.execStatus, "",
-					finalScriptStatus);
-			Reporter.updateReports(Reporter.updateValue.failedStepNo, "",
-					finalScriptStatus);
-			// REPORTER.takeScreenShot(finalScriptStatus);
-			// Click Logout
-			// COMMON_METHODS.clickElement(getTestObject("OL_9"));
-			Reporter.LogEvent(TestStatus.INFO, "", "",
-					"-------->[ End Of Script Execution ]<--------");
-
-		} else {
-			finalScriptStatus = "FAIL";
-			Reporter.updateReports(Reporter.updateValue.execStatus, "",
-					finalScriptStatus);
-			Reporter.updateReports(Reporter.updateValue.failedStepNo, "",
-					finalScriptStatus);
-		}
-
-		// Rename the result log
-		Reporter.RenameResultLog(finalScriptStatus);
-
-		if (driverForThread.get() != null) {
-			
-			driverForThread.remove();
-			//getDriver().quit();
-			}
-		
-	}
-	}
-
+	
+	//  @AfterMethod(alwaysRun = true) 
+	  public void tearDown(ITestResult paramITestResult) throws IOException { 
+		  System.out.println("@AfterMethod"); 
+	  //AtuReports.setAuthorInfoForReports();
+	  String browserName =
+	  paramITestResult.getAttribute(Platform.BROWSER_NAME_PROP).toString();
+	  
+	  System.out.println("steps count >>> "+Reporter.stepCount);
+	  System.out.println("total steps count >>> "+Reporter.updateValue.totalSteps.
+	  ordinal());
+	  
+	  if(Reporter.stepCount >0){ if (browserName != null &&
+	  browserName.equalsIgnoreCase("Unknown")) {
+	  paramITestResult.setAttribute("BrowserName", "Chrome");
+	  paramITestResult.setAttribute("BrowserVersion", "v103.0"); }
+	  
+	  String finalScriptStatus; String sTemp =
+	  paramITestResult.getTestContext().getFailedTests() .toString();
+	  
+	  Reporter.updateReports(Reporter.updateValue.tEndTime, "", "");
+	  Reporter.updateReports(Reporter.updateValue.execTime,formatIntoHHMMSS(
+	  Calendar.getInstance().getTimeInMillis()- vScriptStartTime).toString(), "");
+	  Reporter.updateReports(Reporter.updateValue.totalSteps, "", "");
+	  
+	  if (!sTemp.contains("FAILURE")) { finalScriptStatus = "PASS";
+	  Reporter.updateReports(Reporter.updateValue.execStatus, "",
+	  finalScriptStatus); Reporter.updateReports(Reporter.updateValue.failedStepNo,
+	  "", finalScriptStatus); // REPORTER.takeScreenShot(finalScriptStatus); 
+	  //Click Logout // COMMON_METHODS.clickElement(getTestObject("OL_9"));
+	  Reporter.LogEvent(TestStatus.INFO, "", "",
+	  "-------->[ End Of Script Execution ]<--------");
+	  
+	  } else { finalScriptStatus = "FAIL";
+	  Reporter.updateReports(Reporter.updateValue.execStatus, "",
+	  finalScriptStatus); Reporter.updateReports(Reporter.updateValue.failedStepNo,
+	  "", finalScriptStatus); }
+	  
+	  // Rename the result log Reporter.RenameResultLog(finalScriptStatus);
+	  
+	   if (driverForThread.get() != null) {
+	  
+		 driverForThread.remove(); 
+	    }
+	  
+	    }
+	  }	  
+	 	 
 
 	public void closeSetup() {
 		// com.rp.automation.framework.atuReports.setAuthorInfoForReports();

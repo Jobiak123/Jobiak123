@@ -1,42 +1,122 @@
 package com.jbk.mh.scripts;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
-
 import com.jbk.automation.framework.reports.AtuReports;
 import com.jbk.automation.framework.webdriver.Page;
-//import com.jbk.automation.framework.reports.AtuReports;
 import com.jbk.automation.framework.webdriver.WebDriverBase;
-import com.jbk.mh.pages.CCHomePage;
 import com.jbk.mh.pages.CCJobDetailsPage;
-import com.jbk.mh.pages.CCJobsPage;
 
-public class CCJobsDetailsPageTest extends WebDriverBase{
+
+public class CCJobsDetailsPageTest extends WebDriverBase 
+  {
+	
+	@Test(dataProvider ="CCGFJDataValidations")
+	public void validatePostedGFJJobs(String data) throws Exception
+	{
+		
+		  WebDriver driver=WebDriverBase.getDriver();
+		  AtuReports.setAuthorInfoForReports("SYalavarthi", "1.0"); 
+		  CCJobDetailsPage ccJobDetailsPage=getPageFactory().getCCJobDetailsPage();
+		  System.out.println(" URL ::" + data);
+		  Thread.sleep(1000);
+		  driver.get(data);
+		  Thread.sleep(3000);
+		  ccJobDetailsPage.validateSocialIconLinks();
+		  ccJobDetailsPage.validateJobDetailsInfo();
+		  ccJobDetailsPage.validateJobDetailedInfo();
+		  ccJobDetailsPage.verifyJobBuckets(); 
+		  
+		// ccJobDetailsPage.verifySimilarJobs();
+		  
+		  ccJobDetailsPage.verifyFacebookBottomIconNavigation();
+		  driver.navigate().back();
+		  Thread.sleep(2000);
+		  ccJobDetailsPage.verifyInstagramNavigation();
+		  driver.navigate().back();
+		  Thread.sleep(2000);
+		  ccJobDetailsPage.verifyPrivacyPolicyNavigation();
+		  driver.navigate().back();
+		  Thread.sleep(2000);
+		  ccJobDetailsPage.verifyTermsOfServiceNavigation();
+		  driver.navigate().back();
+		  Thread.sleep(2000);
+		  ccJobDetailsPage.verifyCookiePolicyNavigation();
+		  driver.navigate().back();
+		  Thread.sleep(2000);
+		  ccJobDetailsPage.verifyCopyRightFooter();
+		  Thread.sleep(1000);
+	      driver.close();
+					
+	   }
 	
 	
-	@Test //(priority = 1, dataProvider = "CCLoginCredentials")
-	public void validateJobDetailsPageTest() throws InterruptedException, Exception {
+	
+	@Test(dataProvider ="CCNonGFJDataValidations")
+	public void validateNonPostedGFJJobs(String data) throws Exception
+	{
 		
-		//CCUtil.getCCHomePage(data, pageFactory);
-		AtuReports.setAuthorInfoForReports("SYalavarthi", "1.0");
-		CCHomePage ccHomePage=getPageFactory().getCCHomePage();
-		CCJobsPage ccJobsPage=getPageFactory().getCCJobsPage();
-		CCJobDetailsPage ccJobDetailsPage=getPageFactory().getCCJobDetailsPage();
-		ccHomePage.openCCUrl();
-		String link ="HomeLink";
-		ccHomePage.clickOnLink(link);
-		ccHomePage.searchByJobsTitleField("Nurse");
-		ccJobsPage.getJobDetails();
-		Thread.sleep(3000);
-		Page.switchToNewTab();	          
-        ccJobDetailsPage.validateSocialIconLinks();
-		ccJobDetailsPage.validateJobDetailsInfo();
-		ccJobDetailsPage.validateJobDetailedInfo();
-		ccJobDetailsPage.verifyJobBuckets();
-		ccJobDetailsPage.verifySimilarJobs();
-		Page.switchToParentWindow();
-		Thread.sleep(3000);
-		//Page.driver.close();		
-		
-	}
+		  WebDriver driver=WebDriverBase.getDriver();
+		  AtuReports.setAuthorInfoForReports("SYalavarthi", "1.0"); 
+		  CCJobDetailsPage ccJobDetailsPage=getPageFactory().getCCJobDetailsPage();
+		  System.out.println(" unique id ::" + data);
+		  Thread.sleep(1000);
+		  driver.get(Page.envJobURL+data);
+		  Thread.sleep(3000);
+		  ccJobDetailsPage.validateSocialIconLinks();
+		  ccJobDetailsPage.validateJobDetailsInfo();
+		  ccJobDetailsPage.validateJobDetailedInfo();
+		  ccJobDetailsPage.verifyJobBuckets(); 
+		  
+		// ccJobDetailsPage.verifySimilarJobs();
+		  
+		  ccJobDetailsPage.verifyFacebookBottomIconNavigation();
+		  driver.navigate().back();
+		  Thread.sleep(2000);
+		  ccJobDetailsPage.verifyInstagramNavigation();
+		  driver.navigate().back();
+		  Thread.sleep(2000);
+		  ccJobDetailsPage.verifyPrivacyPolicyNavigation();
+		  driver.navigate().back();
+		  Thread.sleep(2000);
+		  ccJobDetailsPage.verifyTermsOfServiceNavigation();
+		  driver.navigate().back();
+		  Thread.sleep(2000);
+		  ccJobDetailsPage.verifyCookiePolicyNavigation();
+		  driver.navigate().back();
+		  Thread.sleep(2000);
+		  ccJobDetailsPage.verifyCopyRightFooter();
+		  Thread.sleep(1000);
+		  driver.close();
+					
+	   }
+  
+  
+   
+  
+  }
+			   
+		    
+		   
+	      
+	     
+		   
+	
+	
+  
+	
 
-}
+	    
+
+
+	
+
+
+	
+	
+	
+
+	
+	
+
+

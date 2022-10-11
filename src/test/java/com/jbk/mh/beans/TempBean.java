@@ -11,6 +11,16 @@ public class TempBean implements Serializable{
 	private static final long serialVersionUID = 1L;
 	private String propertyName;
 	private String beginDateRange;
+	private String submittedUrl;
+	
+	public String getSubmittedUrl() {
+		return submittedUrl;
+	}
+	public void setSubmittedUrl(String submittedUrl) {
+		this.submittedUrl = submittedUrl;
+	}
+	
+	
 	public String getPropertyName() {
 		return propertyName;
 	}
@@ -66,6 +76,7 @@ public class TempBean implements Serializable{
 			return false;
 		return true;
 	}
+	
 	
 	
 }

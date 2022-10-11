@@ -1,5 +1,7 @@
 package com.jbk.automation.framework.util;
 
+import java.util.HashMap;
+
 /**
  * @author SYalavarthi
  *
@@ -53,6 +55,8 @@ public class DBUtil {
 			String query) {
 		return jdbcTemplate.queryForList(query);
 	}
+	
+	
 	
 	
 	  public List<TempBean> getRowsUsingRowMapper(JdbcTemplate jdbcTemplate, String

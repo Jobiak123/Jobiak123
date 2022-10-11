@@ -146,21 +146,17 @@ public class ATUReportsListenerExt extends ATUReportsListener {
 	}
 
 	
-	public void onExecutionStart() {
-		try {
-			// File reportsFolder = new File("E:\\Reports");
-			File reportsFolder = new File(System.getProperty("user.dir")
-					+ "\\Reports\\"
-					+ Reporter.getDateFormat(Reporter.vDatetype1));
-			System.out.println("@@@@@@=" + reportsFolder);
-			System.out.println("@@@@@@11111=" + reportsFolder.exists());
-			reportsFolder.mkdir();
-			createAtuConfigPropFile(reportsFolder.getAbsolutePath());
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		initChecking();
-	}
+	
+	  public void onExecutionStart() { try { 
+	  // File reportsFolder = new File("E:\\Reports"); 
+		  File reportsFolder = new
+	  File(System.getProperty("user.dir") + "\\Reports\\" +
+	  Reporter.getDateFormat(Reporter.vDatetype1)); System.out.println("@@@@@@=" +
+	  reportsFolder); System.out.println("@@@@@@11111=" + reportsFolder.exists());
+	  reportsFolder.mkdir();
+	  createAtuConfigPropFile(reportsFolder.getAbsolutePath()); } catch (Exception
+	  e) { e.printStackTrace(); } initChecking(); }
+	 
 
 	private void createAtuConfigPropFile(String filePath) {
 		try {

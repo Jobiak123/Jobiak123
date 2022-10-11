@@ -18,7 +18,7 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/ADMIN/Downloads/com.mysql.jdbc_5.1.5.jar/com.mysql.jdbc_5.1.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ADMIN/Downloads/com.mysql.jdbc_5.1.5.jar/com.mysql.jdbc_5.1.5.jar" sourcepath="C:/Users/ADMIN/Downloads/com.mysql.jdbc_5.1.5.jar/com.mysql.jdbc_5.1.5.jar"/>
 	<classpathentry kind="src" output="target/classes" path="src/main/java">
 		<attributes>
 			<attribute name="optional" value="true"/>
