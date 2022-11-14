@@ -18,8 +18,9 @@
 	 	<parameter name="platform" value="windows" />
 	 
 	 
-		<classes>
-			<class name="com.jbk.mh.scripts.CCHomePageTest">
+	<classes>
+	
+		<class name="com.jbk.mh.scripts.CCHomePageTest">
 				<methods>
 					<include name="verifyLoadingHomePage"/>
 					<include name="verifyPresenceofTabs"/>
@@ -117,6 +118,7 @@
                     <include name="verifyCopyRightFooter"/>
 				</methods>
    </class>
+	
 	
 		</classes>
 	

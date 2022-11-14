@@ -56,7 +56,6 @@ public class CCJobDetailsPage extends Page {
 	@FindBy(xpath = "//span[@class='icon-instagram']")
 	private WebElement InstagramIcon;
 
-	
 	@FindBy(xpath = "//*[@class='pr-btn'][@type='button']")
 	private WebElement ApplyNowButton;
 

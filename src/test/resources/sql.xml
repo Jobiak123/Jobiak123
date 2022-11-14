@@ -2,26 +2,49 @@
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
 	
-	<entry key="getCCGfjJobs">
+	<entry key="getCCPostedGfjJobs">
 	 <![CDATA[	 
 	 SELECT submittedUrl 
 	 FROM jobs_feed 
-	 WHERE posted_to_gfj = 1 
-	 AND DATE(posted_date)= '2022-10-09' 
-	 GROUP BY company 
-	 ORDER BY COUNT(*) DESC LIMIT 5
+	 WHERE posted_to_gfj = 1
+	 AND is_deleted=0 
+	 AND (posted_date BETWEEN '2022-11-08 00:00:00' AND '2022-11-08 23:59:59') 
+	 GROUP BY company
+	  ]]>
+	</entry>
+	
+	<entry key="getCCNonPostedGfjJobs">
+	 <![CDATA[	 
+	 SELECT uniqueid 
+	 FROM jobs_feed 
+	 WHERE posted_to_gfj ! = 1
+	 AND is_deleted=0 
+	 AND (posted_date BETWEEN '2022-11-08 00:00:00' AND '2022-11-08 23:59:59') 
+	 GROUP BY company LIMIT 2
 	 ]]>
 	</entry>
 	
-	<entry key="getCCNonGfjJobs">
+	<entry key="getHCJPostedGfjJobs">
 	 <![CDATA[	 
-	 SELECT uniqueid,company 
+	 SELECT submittedUrl 
 	 FROM jobs_feed 
-	 WHERE posted_to_gfj != 1 
-	 AND DATE(posted_date)= '2022-10-09'
-	 GROUP BY company 
-	 ORDER BY COUNT(*) DESC LIMIT 5
+	 WHERE posted_to_gfj = 1
+	 AND is_deleted=0 
+	 AND (posted_date BETWEEN '2022-11-05 00:00:00' AND '2022-11-05 23:59:59') 
+	 GROUP BY company LIMIT 2
+	]]>
+	</entry>
+	
+	<entry key="getHCJNonPostedGfjJobs">
+	 <![CDATA[	 
+	 SELECT uniqueid 
+	 FROM jobs_feed 
+	 WHERE posted_to_gfj = 10
+	 AND is_deleted=0 
+	 AND (posted_date BETWEEN '2022-11-05 00:00:00' AND '2022-11-05 23:59:59') 
+	 GROUP BY company LIMIT 2
 	 ]]>
 	</entry>
+	
 	
 </properties>

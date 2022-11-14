@@ -36,8 +36,13 @@ public class Page {
 	public static WebDriver driver = WebDriverBase.getDriver();
 	public static WebDriverHelper webDriverHelper = new WebDriverHelper(driver);
 	
-	public static String envURL = (String) WebDriverBase.context.getBean("ccEnvURL");
-	public static String envJobURL = (String) WebDriverBase.context.getBean("ccEnvJobURL");
+	public static String ccURL = (String) WebDriverBase.context.getBean("ccProdURL");
+	public static String ccJobURL = (String) WebDriverBase.context.getBean("ccProdJobURL");
+	public static String hcjURL = (String) WebDriverBase.context.getBean("hcjProdURL");
+	public static String hcjJobURL = (String) WebDriverBase.context.getBean("hcjProdJobURL");
+	
+	
+	
 	
 	WebElement webElement = null;
 

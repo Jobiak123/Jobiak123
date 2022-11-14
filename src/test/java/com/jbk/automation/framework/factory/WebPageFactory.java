@@ -11,6 +11,11 @@ import com.jbk.mh.pages.CCContactPage;
 import com.jbk.mh.pages.CCHomePage;
 import com.jbk.mh.pages.CCJobDetailsPage;
 import com.jbk.mh.pages.CCJobsPage;
+import com.jbk.mh.pages.HCJAboutPage;
+import com.jbk.mh.pages.HCJBlogPage;
+import com.jbk.mh.pages.HCJContactPage;
+import com.jbk.mh.pages.HCJHomePage;
+import com.jbk.mh.pages.HCJJobDetailsPage;
 import com.jbk.automation.framework.webdriver.Page;
 
 
@@ -42,7 +47,27 @@ public class WebPageFactory implements BasePageFactory {
 		  
 		  return PageFactory.initElements(Page.driver, CCContactPage.class); }
 	  
-	  
+     
+     public HCJHomePage getHCJHomePage() {
+   	  
+	      return PageFactory.initElements(Page.driver, HCJHomePage.class); }
+	 
+	 public HCJJobDetailsPage getHCJJobDetailsPage() {
+		  
+		  return PageFactory.initElements(Page.driver, HCJJobDetailsPage.class); }
+
+    public HCJAboutPage getHCJAboutPage() {
+		  
+		  return PageFactory.initElements(Page.driver, HCJAboutPage.class); }
+    
+    public HCJBlogPage getHCJBlogPage() {
+		  
+		  return PageFactory.initElements(Page.driver, HCJBlogPage.class); }
+    
+    public HCJContactPage getHCJContactPage() {
+		  
+		  return PageFactory.initElements(Page.driver, HCJContactPage.class); }
+
 	  
 	  
 	  

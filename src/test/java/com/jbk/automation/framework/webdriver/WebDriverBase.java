@@ -65,6 +65,7 @@ public class WebDriverBase {
 	WebDriver driver;
 
 	private static JdbcTemplate ccJdbcTemplate = null;
+	private static JdbcTemplate hcjJdbcTemplate = null;
 
 	public static ApplicationContext context = null;
 
@@ -75,7 +76,11 @@ public class WebDriverBase {
 	public static JdbcTemplate getCCJdbcTemplate() {
 		return ccJdbcTemplate;
 	}
-
+	
+	public static JdbcTemplate getHCJJdbcTemplate() {
+		return hcjJdbcTemplate;
+	}
+	
 	public static ThreadLocal<WebDriver> driverForThread = new ThreadLocal<WebDriver>();
 
 	
@@ -98,6 +103,8 @@ public class WebDriverBase {
 	public void beforeSuite() throws Exception {
 		context = new ClassPathXmlApplicationContext("/spring-beans.xml");
 		ccJdbcTemplate = (JdbcTemplate) context.getBean("ccJdbcTemplate");
+		hcjJdbcTemplate = (JdbcTemplate) context.getBean("hcjJdbcTemplate");
+		
 
 	}
 
@@ -258,13 +265,13 @@ public class WebDriverBase {
 	}
 
 
-	@DataProvider(name = "CCGFJDataValidations")
-	public Iterator<Object[]> ccGFJDataProvider() {
+	@DataProvider(name = "CCPostedGFJJobs")
+	public Iterator<Object[]> ccPostedGFJDataProvider() {
 
 		 List<Object[]> ccData = new ArrayList<Object[]>();
 		
 		 DBUtil dbutil = ((DBUtil)getContext().getBean("dbUtil"));
-		 List<Map<String,Object>> dbList = dbutil.getRows(getCCJdbcTemplate(),DBUtil.getNamedQuery("getCCGfjJobs"));
+		 List<Map<String,Object>> dbList = dbutil.getRows(getCCJdbcTemplate(),DBUtil.getNamedQuery("getCCPostedGfjJobs"));
 		 
 		 for(Map<String, Object> map :dbList)
 		 {
@@ -284,13 +291,13 @@ public class WebDriverBase {
 	}	
 
 	
-	@DataProvider(name = "CCNonGFJDataValidations")
-	public Iterator<Object[]> ccNonGFJDataProvider() {
+	@DataProvider(name = "CCNonPostedGFJJobs")
+	public Iterator<Object[]> ccNonPostedGFJDataProvider() {
 
 		 List<Object[]> ccData = new ArrayList<Object[]>();
 		
 		 DBUtil dbutil = ((DBUtil)getContext().getBean("dbUtil"));
-		 List<Map<String,Object>> dbList = dbutil.getRows(getCCJdbcTemplate(),DBUtil.getNamedQuery("getCCNonGfjJobs"));
+		 List<Map<String,Object>> dbList = dbutil.getRows(getCCJdbcTemplate(),DBUtil.getNamedQuery("getCCNonPostedGfjJobs"));
 		 
 		 for(Map<String, Object> map :dbList)
 		 {
@@ -309,7 +316,65 @@ public class WebDriverBase {
 			
 	}	
 
+	
+	@DataProvider(name = "HCJPostedGFJJobs")
+	public Iterator<Object[]> hcjPostedGFJDataProvider() {
 
+		 List<Object[]> ccData = new ArrayList<Object[]>();
+		
+		 DBUtil dbutil = ((DBUtil)getContext().getBean("dbUtil"));
+		 List<Map<String,Object>> dbList = dbutil.getRows(getHCJJdbcTemplate(),DBUtil.getNamedQuery("getHCJPostedGfjJobs"));
+		 
+		 for(Map<String, Object> map :dbList)
+		 {
+			 Object value= map.get("submittedUrl"); 
+			  System.out.println( "Submitted URL ::" + value); 
+			  Object[] obj = new Object[1]; 
+			  obj[0] = value;
+			 
+		      ccData.add(obj);
+	        //  System.out.println("After For Loop");
+	           
+		 }
+			//   System.out.println("In After  Main For Loop");
+	        //   System.out.println("Before return "+ccData.size());
+			return ccData.iterator();
+			
+	}	
+
+	
+	@DataProvider(name = "HCJNonPostedGFJJobs")
+	public Iterator<Object[]> hcjNonPostedGFJDataProvider() {
+
+		 List<Object[]> ccData = new ArrayList<Object[]>();
+		
+		 DBUtil dbutil = ((DBUtil)getContext().getBean("dbUtil"));
+		 List<Map<String,Object>> dbList = dbutil.getRows(getHCJJdbcTemplate(),DBUtil.getNamedQuery("getHCJNonPostedGfjJobs"));
+		 
+		 for(Map<String, Object> map :dbList)
+		 {
+			 Object value= map.get("uniqueid"); 
+			  System.out.println( "Unique Id ::" + value); 
+			  Object[] obj = new Object[1]; 
+			  obj[0] = value;
+			 
+		      ccData.add(obj);
+	        //  System.out.println("After For Loop");
+	           
+		 }
+			//   System.out.println("In After  Main For Loop");
+	        //   System.out.println("Before return "+ccData.size());
+			return ccData.iterator();
+			
+	}	
+
+	
+	
+	
+	
+	
+	
+	
 
 	public Iterator<Object[]> testDataprovider(String dashboardName, String module) {
 

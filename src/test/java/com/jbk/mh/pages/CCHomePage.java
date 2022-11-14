@@ -67,7 +67,7 @@ public class CCHomePage extends Page {
 	@FindBy(xpath = "//*[@class='text-primary']")
 	private WebElement TrendingSearches;
 	
-	@FindBy(xpath = "//a[contains(@href,'Registered Nurse')]")
+	@FindBy(xpath = "//a[contains(text(),'Registered Nurse')]")
 	private WebElement TrendingSearchLink;
 	
 	@FindBy(xpath = "(//*[@class='view_more'])[1]")
@@ -195,27 +195,18 @@ public class CCHomePage extends Page {
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	public void openCCUrl() {
 		try {
 			
-			driver.navigate().to(Page.envURL);
+			driver.navigate().to(Page.ccURL);
 			waitForPageLoad();
 			//driver.navigate().to(WebDriverBase._prop.getString("ccurl"));
-			AtuReports.passResults1("Navigate to "+Page.envURL+" Application", "--",
+			AtuReports.passResults1("Navigate to "+Page.ccURL+" Application", "--",
 					"Home Page should display", "Home Page is displayed");
 
 		} catch (Exception exception) {
 			driver.close();
-			AtuReports.failResults("Navigate to "+Page.envURL+" Application", "--",
+			AtuReports.failResults("Navigate to "+Page.ccURL+" Application", "--",
 					"Home Page should display", catchException(exception));
 			
 		}
@@ -332,8 +323,10 @@ public class CCHomePage extends Page {
 				"WAIT_FOR_ELEMENT_TO_BE_ENABLED", "About Tab");
 		waitForPageElement(getBlogTab(),
 				"WAIT_FOR_ELEMENT_TO_BE_ENABLED", "Blog Tab");
+		waitForPageElement(getContactTab (),
+				"WAIT_FOR_ELEMENT_TO_BE_ENABLED", "Contact Tab");
 		
-	}
+	} 
 	
 	public void verifyJobsHeader() {
 		isTextPresent(getJobsAvailableHeader(), "Jobs Available");
@@ -353,6 +346,8 @@ public class CCHomePage extends Page {
 				"WAIT_FOR_ELEMENT_TO_BE_ENABLED", "City Field");
 		waitForPageElement(getMilesField(),
 				"WAIT_FOR_ELEMENT_TO_BE_ENABLED", "Miles Field");
+		waitForPageElement(getSearchIcon(),
+				"WAIT_FOR_ELEMENT_TO_BE_ENABLED", "Submit Button");	
 			
 	}
 	
@@ -385,7 +380,7 @@ public class CCHomePage extends Page {
 		  String text1= getTrendingSearchLink().getText();
 		  System.out.println("Value1::"+text1);
 		  Page.jsClick(getTrendingSearchLink(), text1);
-		  waitForCCHomePageToLoad();
+		  waitForPageLoad();
 		  String text2=getJobsTitleField().getAttribute("value");
 		  System.out.println("Value2::"+text2);
 		  if(text1.equalsIgnoreCase(text2)) {

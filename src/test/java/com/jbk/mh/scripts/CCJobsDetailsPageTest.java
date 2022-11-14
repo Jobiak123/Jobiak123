@@ -11,7 +11,7 @@ import com.jbk.mh.pages.CCJobDetailsPage;
 public class CCJobsDetailsPageTest extends WebDriverBase 
   {
 	
-	@Test(dataProvider ="CCGFJDataValidations")
+	@Test(dataProvider ="CCPostedGFJJobs")
 	public void validatePostedGFJJobs(String data) throws Exception
 	{
 		
@@ -32,9 +32,9 @@ public class CCJobsDetailsPageTest extends WebDriverBase
 		  ccJobDetailsPage.verifyFacebookBottomIconNavigation();
 		  driver.navigate().back();
 		  Thread.sleep(2000);
-		  ccJobDetailsPage.verifyInstagramNavigation();
-		  driver.navigate().back();
-		  Thread.sleep(2000);
+		//  ccJobDetailsPage.verifyInstagramNavigation();
+		//  driver.navigate().back();
+		//  Thread.sleep(2000);
 		  ccJobDetailsPage.verifyPrivacyPolicyNavigation();
 		  driver.navigate().back();
 		  Thread.sleep(2000);
@@ -52,7 +52,7 @@ public class CCJobsDetailsPageTest extends WebDriverBase
 	
 	
 	
-	@Test(dataProvider ="CCNonGFJDataValidations")
+	@Test(dataProvider ="CCNonPostedGFJJobs")
 	public void validateNonPostedGFJJobs(String data) throws Exception
 	{
 		
@@ -61,7 +61,7 @@ public class CCJobsDetailsPageTest extends WebDriverBase
 		  CCJobDetailsPage ccJobDetailsPage=getPageFactory().getCCJobDetailsPage();
 		  System.out.println(" unique id ::" + data);
 		  Thread.sleep(1000);
-		  driver.get(Page.envJobURL+data);
+		  driver.get(Page.ccJobURL+data);
 		  Thread.sleep(3000);
 		  ccJobDetailsPage.validateSocialIconLinks();
 		  ccJobDetailsPage.validateJobDetailsInfo();

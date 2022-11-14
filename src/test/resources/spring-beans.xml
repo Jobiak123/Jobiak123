@@ -25,16 +25,43 @@
 		<property name="password" value="SN9hMf18ZADEaS" />
 	</bean>
 	
+	<bean id="hcjDataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="${hcj_connection_url}" />
+		<property name="username" value="srinivas" />
+		<property name="password" value="SN9hMf18ZADEaS" />
+	</bean>
+	
+	
+	
 	<bean id="ccJdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
 		<property name="dataSource" ref="ccDataSource"></property>
 	</bean>
 	
-	<bean id="ccEnvURL" class="java.lang.String">
+	<bean id="hcjJdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="hcjDataSource"></property>
+	</bean>
+	
+	
+	
+	<bean id="ccProdURL" class="java.lang.String">
 		<constructor-arg value="${cc_web_url}"></constructor-arg>
 	</bean>
-	<bean id="ccEnvJobURL" class="java.lang.String">
+	<bean id="ccProdJobURL" class="java.lang.String">
 		<constructor-arg value="${cc_web_job_url}"></constructor-arg>
 	</bean>
+	
+	<bean id="hcjProdURL" class="java.lang.String">
+		<constructor-arg value="${hcj_web_url}"></constructor-arg>
+	</bean>
+	<bean id="hcjProdJobURL" class="java.lang.String">
+		<constructor-arg value="${hcj_web_job_url}"></constructor-arg>
+	</bean>
+	
+	
+	
+	
 	<bean id="grid_url" class="java.lang.String">
 		<constructor-arg value="${grid_url}"></constructor-arg>
 	</bean>
@@ -53,6 +80,7 @@
 	<bean id="HCJTestDataWorkBookName" class="java.lang.String">
 		<constructor-arg value="${HCJTestDataWorkBookName}"></constructor-arg>
 	</bean>
+	
 	
 	<bean id="configEnv" class="java.lang.String">
 		<constructor-arg value="prod"></constructor-arg>
