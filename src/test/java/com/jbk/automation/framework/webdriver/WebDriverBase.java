@@ -18,7 +18,6 @@ import java.util.Map;
 import java.util.ResourceBundle;
 //import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -39,7 +38,6 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
-
 import com.jbk.automation.framework.factory.BasePageFactory;
 import com.jbk.automation.framework.factory.WebPageFactory;
 import com.jbk.automation.framework.reports.AtuReports;
@@ -50,7 +48,6 @@ import com.jbk.automation.framework.util.Reporter;
 import com.jbk.automation.framework.util.Reporter.TestStatus;
 import com.jbk.automation.framework.webdriver.WebDriverBase;
 import com.jbk.automation.framework.util.SendMail;
-
 import atu.testng.reports.ATUReports;
 import atu.testng.reports.utils.Platform;
 
@@ -156,7 +153,7 @@ public class WebDriverBase {
 		 //  Runtime.getRuntime().exec("taskkill /F /IM iexplore.exe"); // driver =
 		 // loadRemoteWebDriver();
 		  
-		  System.setProperty("webdriver.chrome.driver", "C:\\Users\\ADMIN\\Downloads\\chromedriver_win32\\chromedriver.exe");
+		  System.setProperty("webdriver.chrome.driver", "C:\\Users\\ADMIN\\Downloads\\chromedriver_win32 (1)\\chromedriver.exe");
 		  ChromeOptions options =new ChromeOptions(); 
 		 ChromeDriver driver = new ChromeDriver(options); 
 		  driver.manage().window().maximize();
@@ -275,7 +272,7 @@ public class WebDriverBase {
 		 
 		 for(Map<String, Object> map :dbList)
 		 {
-			 Object value= map.get("submittedUrl"); 
+			  Object value= map.get("submittedUrl"); 
 			  System.out.println( "Submitted URL ::" + value); 
 			  Object[] obj = new Object[1]; 
 			  obj[0] = value;

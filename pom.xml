@@ -3,10 +3,9 @@
   <groupId>MH_Automation_Framework</groupId>
   <artifactId>MHAutomationFramework</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
-  
+    
   <name>MH_Automation</name>
-	<url>http://maven.apache.org</url>
+	<url>http://maven.apache.org</url> 
 	
 	<properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -14,48 +13,42 @@
 	
 	 <dependencies>
 
-	<!-- 	<dependency>
-			<groupId>atu_jar</groupId>
-			<artifactId>atu_jar</artifactId>
-			<version>1.0.0</version>
+	<!--  	<dependency>
+			<groupId>atu.testng.reports.ATUReports</groupId>
+			<artifactId>ATUReporter</artifactId>
+			<version>5.5</version>
 			<scope>system</scope>
 			<systemPath>${basedir}/Jars/ATUReporter_Selenium_testNG_5.5_BETA.jar</systemPath>
 		</dependency>
 
 		<dependency>
-			<groupId>atu_jar1</groupId>
-			<artifactId>atu_jar1</artifactId>
-			<version>1.0.0</version>
+		    <groupId>atu.testng.reports.ATUTestRecorder</groupId>
+           <artifactId>ATUTestRecorder</artifactId>
+           <version>2.1</version>
 			<scope>system</scope>
 			<systemPath>${basedir}/Jars/ATUTestRecorder_2.1.jar</systemPath>
 		</dependency>
-				
+	 	
 	-->
 	
-			 <dependency>
+   <dependency>
 			<groupId>atu.testng.reports.ATUReports</groupId>
 			<artifactId>ATUReporter</artifactId>
 			<version>5.5</version>
 			<scope>system</scope>
-			<systemPath>C:\Users\ADMIN\eclipse-workspace\CareCrewAutomationFrameWork\Jars\ATUReporter_Selenium_testNG_5.5_BETA.jar</systemPath>
-	
-		</dependency>
+			<systemPath>C:\Users\ADMIN\git\repository\MHAutomationFramework\Jars\ATUReporter_Selenium_testNG_5.5_BETA.jar</systemPath>
+	</dependency>
 
 		<dependency>
 			<groupId>atu.testng.reports.ATUTestRecorder</groupId>
 			<artifactId>ATUTestRecorder</artifactId>
 			<scope>system</scope>
 			<version>2.1</version>
-					 	
-			<systemPath>C:\Users\ADMIN\eclipse-workspace\CareCrewAutomationFrameWork\Jars\ATUTestRecorder_2.1.jar</systemPath>
-		
-		
-		</dependency> 
-		
-	
-	
-	
-		<dependency>
+			<systemPath>C:\Users\ADMIN\git\repository\MHAutomationFramework\Jars\ATUTestRecorder_2.1.jar</systemPath>
+	   </dependency>
+	   
+	   
+	<dependency>   
     <groupId>mysql</groupId>
     <artifactId>mysql-connector-java</artifactId>
     <version>5.1.5</version>
@@ -159,6 +152,8 @@
 		</dependency>
 
 	</dependencies>
+	
+	
 	<profiles>
  	<profile>
 			<id>CCRegressionSuite</id>
