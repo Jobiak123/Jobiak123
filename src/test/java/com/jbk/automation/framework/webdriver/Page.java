@@ -40,7 +40,8 @@ public class Page {
 	public static String ccJobURL = (String) WebDriverBase.context.getBean("ccProdJobURL");
 	public static String hcjURL = (String) WebDriverBase.context.getBean("hcjProdURL");
 	public static String hcjJobURL = (String) WebDriverBase.context.getBean("hcjProdJobURL");
-	
+	public static String mhURL = (String) WebDriverBase.context.getBean("mhProdURL");
+	public static String mhJobURL = (String) WebDriverBase.context.getBean("mhProdJobURL");
 	
 	
 	

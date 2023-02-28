@@ -63,6 +63,7 @@ public class WebDriverBase {
 
 	private static JdbcTemplate ccJdbcTemplate = null;
 	private static JdbcTemplate hcjJdbcTemplate = null;
+	private static JdbcTemplate mhJdbcTemplate = null;
 
 	public static ApplicationContext context = null;
 
@@ -76,6 +77,10 @@ public class WebDriverBase {
 	
 	public static JdbcTemplate getHCJJdbcTemplate() {
 		return hcjJdbcTemplate;
+	}
+	
+	public static JdbcTemplate getMHJdbcTemplate() {
+		return mhJdbcTemplate;
 	}
 	
 	public static ThreadLocal<WebDriver> driverForThread = new ThreadLocal<WebDriver>();
@@ -101,6 +106,7 @@ public class WebDriverBase {
 		context = new ClassPathXmlApplicationContext("/spring-beans.xml");
 		ccJdbcTemplate = (JdbcTemplate) context.getBean("ccJdbcTemplate");
 		hcjJdbcTemplate = (JdbcTemplate) context.getBean("hcjJdbcTemplate");
+	    mhJdbcTemplate = (JdbcTemplate) context.getBean("mhJdbcTemplate");
 		
 
 	}
@@ -153,7 +159,7 @@ public class WebDriverBase {
 		 //  Runtime.getRuntime().exec("taskkill /F /IM iexplore.exe"); // driver =
 		 // loadRemoteWebDriver();
 		  
-		  System.setProperty("webdriver.chrome.driver", "C:\\Users\\ADMIN\\Downloads\\chromedriver_win32 (1)\\chromedriver.exe");
+		  System.setProperty("webdriver.chrome.driver", "C:\\Users\\ADMIN\\Downloads\\chromedriver_win32 (2)\\chromedriver.exe");
 		  ChromeOptions options =new ChromeOptions(); 
 		 ChromeDriver driver = new ChromeDriver(options); 
 		  driver.manage().window().maximize();
@@ -366,7 +372,58 @@ public class WebDriverBase {
 	}	
 
 	
+	@DataProvider(name = "MHPostedGFJJobs")
+	public Iterator<Object[]> mhPostedGFJDataProvider() {
+
+		 List<Object[]> mhData = new ArrayList<Object[]>();
+		
+		 DBUtil dbutil = ((DBUtil)getContext().getBean("dbUtil"));
+		 List<Map<String,Object>> dbList = dbutil.getRows(getMHJdbcTemplate(),DBUtil.getNamedQuery("getMHPostedGfjJobs"));
+		 
+		 for(Map<String, Object> map :dbList)
+		 {
+			 Object value= map.get("submittedUrl"); 
+			  System.out.println( "Submitted URL ::" + value); 
+			  Object[] obj = new Object[1]; 
+			  obj[0] = value;
+			 
+		      mhData.add(obj);
+	        //  System.out.println("After For Loop");
+	           
+		 }
+			//   System.out.println("In After  Main For Loop");
+	        //   System.out.println("Before return "+ccData.size());
+			return mhData.iterator();
+			
+	}	
+
 	
+	@DataProvider(name = "MHNonPostedGFJJobs")
+	public Iterator<Object[]> mhNonPostedGFJDataProvider() {
+
+		 List<Object[]> mhData = new ArrayList<Object[]>();
+		
+		 DBUtil dbutil = ((DBUtil)getContext().getBean("dbUtil"));
+		 List<Map<String,Object>> dbList = dbutil.getRows(getMHJdbcTemplate(),DBUtil.getNamedQuery("getMHNonPostedGfjJobs"));
+		 
+		 for(Map<String, Object> map :dbList)
+		 {
+			 Object value= map.get("uniqueid"); 
+			  System.out.println( "Unique Id ::" + value); 
+			  Object[] obj = new Object[1]; 
+			  obj[0] = value;
+			 
+		      mhData.add(obj);
+	        //  System.out.println("After For Loop");
+	           
+		 }
+			//   System.out.println("In After  Main For Loop");
+	        //   System.out.println("Before return "+ccData.size());
+			return mhData.iterator();
+			
+	}	
+
+
 	
 	
 	

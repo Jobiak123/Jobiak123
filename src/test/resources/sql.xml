@@ -46,5 +46,27 @@
 	 ]]>
 	</entry>
 	
+	<entry key="getMHPostedGfjJobs">
+	 <![CDATA[	 
+	 SELECT submittedUrl 
+	 FROM jobs_feed 
+	 WHERE posted_to_gfj = 1
+	 AND is_deleted=0 
+	 AND (posted_date BETWEEN '2022-11-05 00:00:00' AND '2022-11-05 23:59:59') 
+	 GROUP BY company LIMIT 2
+	]]>
+	</entry>
+	
+	<entry key="getMHNonPostedGfjJobs">
+	 <![CDATA[	 
+	 SELECT uniqueid 
+	 FROM jobs_feed 
+	 WHERE posted_to_gfj = 10
+	 AND is_deleted=0 
+	 AND (posted_date BETWEEN '2022-11-05 00:00:00' AND '2022-11-05 23:59:59') 
+	 GROUP BY company LIMIT 2
+	 ]]>
+	</entry>
+	
 	
 </properties>

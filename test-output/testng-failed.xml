@@ -1,29 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [CCAutomation]" verbose="2">
+<suite name="Failed suite [MHAutomation]" verbose="2">
   <parameter name="browsername" value="chrome"/>
-  <parameter name="browserversion" value="103.0.5060"/>
+  <parameter name="browserversion" value="104.0.5112"/>
   <parameter name="platform" value="windows"/>
   <listeners>
     <listener class-name="atu.testng.reports.listeners.ATUReportsListener"/>
     <listener class-name="atu.testng.reports.listeners.ConfigurationListener"/>
     <listener class-name="atu.testng.reports.listeners.MethodListener"/>
   </listeners>
-  <test name="CareCrewAutomation(failed)">
+  <test name="MedichireAutomation(failed)">
     <parameter name="browsername" value="chrome"/>
-    <parameter name="browserversion" value="103.0.5060"/>
+    <parameter name="browserversion" value="104.0.5112"/>
     <parameter name="platform" value="windows"/>
     <classes>
-      <class name="com.jbk.mh.scripts.CCJobsDetailsPageTest">
+      <class name="com.jbk.mh.scripts.MHHomePageTest">
         <methods>
+          <include name="verifyJobSeekerMoreCompanies"/>
+          <include name="verifyAboutUsNavigation"/>
+          <include name="verifyTermsOfServiceNavigation"/>
           <include name="setUp"/>
           <include name="indexDescription"/>
-          <include name="tearDown"/>
+          <include name="verifyBrowseMoreCompanies"/>
+          <include name="verifyLocationAutoPopulateValue"/>
+          <include name="verifyCookiePolicyNavigation"/>
+          <include name="verifyWorkWithUsNavigation"/>
+          <include name="verifyHireNowLink"/>
+          <include name="verifyPopularSearchesLink"/>
+          <include name="verifyTopLocationsLink"/>
           <include name="beforeSuite"/>
-          <include name="validateJobDetailsPageTest"/>
-          <include name="setUpTest"/>
+          <include name="verifyPrivacyPolicyNavigation"/>
         </methods>
-      </class> <!-- com.jbk.mh.scripts.CCJobsDetailsPageTest -->
+      </class> <!-- com.jbk.mh.scripts.MHHomePageTest -->
     </classes>
-  </test> <!-- CareCrewAutomation(failed) -->
-</suite> <!-- Failed suite [CCAutomation] -->
+  </test> <!-- MedichireAutomation(failed) -->
+</suite> <!-- Failed suite [MHAutomation] -->

@@ -31,7 +31,7 @@
 	 	
 	-->
 	
-   <dependency>
+  <dependency>
 			<groupId>atu.testng.reports.ATUReports</groupId>
 			<artifactId>ATUReporter</artifactId>
 			<version>5.5</version>

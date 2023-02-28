@@ -11,6 +11,14 @@ import com.jbk.mh.pages.HCJBlogPage;
 import com.jbk.mh.pages.HCJContactPage;
 import com.jbk.mh.pages.HCJHomePage;
 import com.jbk.mh.pages.HCJJobDetailsPage;
+import com.jbk.mh.pages.MHDashboardPage;
+import com.jbk.mh.pages.MHEmployersPage;
+import com.jbk.mh.pages.MHHomePage;
+import com.jbk.mh.pages.MHJobDetailsPage;
+import com.jbk.mh.pages.MHJobSeekersPage;
+import com.jbk.mh.pages.MHLoginPage;
+import com.jbk.mh.pages.MHRegisterPage;
+import com.jbk.mh.pages.MHWebStories;
 
 public interface BasePageFactory {
 
@@ -35,5 +43,24 @@ public interface BasePageFactory {
 	HCJBlogPage getHCJBlogPage();
 	
 	HCJContactPage getHCJContactPage();
+	
+	MHHomePage getMHHomePage();
+		
+	MHJobDetailsPage getMHJobDetailsPage();
+	
+	MHDashboardPage getMHDashboardPage();
+	
+	MHEmployersPage getMHEmployersPage();
+	
+	MHJobSeekersPage getMHJobSeekersPage();
+	
+	MHLoginPage getMHLoginPage();
+	
+	MHRegisterPage getMHRegisterPage();
+	
+	MHWebStories getMHWebStories();
+	
+	
+	
 	
 	}

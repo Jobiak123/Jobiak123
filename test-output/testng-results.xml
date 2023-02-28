@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="1" passed="1" failed="0" skipped="0">
+<testng-results total="45" passed="34" failed="11" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[STEP1]]>
@@ -88,58 +88,559 @@
     <line>
       <![CDATA[STEP29]]>
     </line>
+    <line>
+      <![CDATA[STEP30]]>
+    </line>
+    <line>
+      <![CDATA[STEP31]]>
+    </line>
+    <line>
+      <![CDATA[STEP32]]>
+    </line>
+    <line>
+      <![CDATA[STEP33]]>
+    </line>
+    <line>
+      <![CDATA[STEP34]]>
+    </line>
+    <line>
+      <![CDATA[STEP35]]>
+    </line>
+    <line>
+      <![CDATA[STEP36]]>
+    </line>
+    <line>
+      <![CDATA[STEP37]]>
+    </line>
+    <line>
+      <![CDATA[STEP38]]>
+    </line>
+    <line>
+      <![CDATA[STEP39]]>
+    </line>
+    <line>
+      <![CDATA[STEP40]]>
+    </line>
+    <line>
+      <![CDATA[STEP41]]>
+    </line>
+    <line>
+      <![CDATA[STEP42]]>
+    </line>
+    <line>
+      <![CDATA[STEP43]]>
+    </line>
+    <line>
+      <![CDATA[STEP44]]>
+    </line>
+    <line>
+      <![CDATA[STEP45]]>
+    </line>
+    <line>
+      <![CDATA[STEP46]]>
+    </line>
+    <line>
+      <![CDATA[STEP47]]>
+    </line>
+    <line>
+      <![CDATA[STEP48]]>
+    </line>
+    <line>
+      <![CDATA[STEP49]]>
+    </line>
+    <line>
+      <![CDATA[STEP50]]>
+    </line>
+    <line>
+      <![CDATA[STEP51]]>
+    </line>
+    <line>
+      <![CDATA[STEP52]]>
+    </line>
+    <line>
+      <![CDATA[STEP53]]>
+    </line>
+    <line>
+      <![CDATA[STEP54]]>
+    </line>
+    <line>
+      <![CDATA[STEP55]]>
+    </line>
+    <line>
+      <![CDATA[STEP56]]>
+    </line>
+    <line>
+      <![CDATA[STEP57]]>
+    </line>
+    <line>
+      <![CDATA[STEP58]]>
+    </line>
+    <line>
+      <![CDATA[STEP59]]>
+    </line>
+    <line>
+      <![CDATA[STEP60]]>
+    </line>
+    <line>
+      <![CDATA[STEP61]]>
+    </line>
+    <line>
+      <![CDATA[STEP62]]>
+    </line>
+    <line>
+      <![CDATA[STEP63]]>
+    </line>
+    <line>
+      <![CDATA[STEP64]]>
+    </line>
+    <line>
+      <![CDATA[STEP65]]>
+    </line>
+    <line>
+      <![CDATA[STEP66]]>
+    </line>
+    <line>
+      <![CDATA[STEP67]]>
+    </line>
+    <line>
+      <![CDATA[STEP68]]>
+    </line>
+    <line>
+      <![CDATA[STEP69]]>
+    </line>
+    <line>
+      <![CDATA[STEP70]]>
+    </line>
+    <line>
+      <![CDATA[STEP71]]>
+    </line>
+    <line>
+      <![CDATA[STEP72]]>
+    </line>
+    <line>
+      <![CDATA[STEP73]]>
+    </line>
+    <line>
+      <![CDATA[STEP74]]>
+    </line>
+    <line>
+      <![CDATA[STEP75]]>
+    </line>
+    <line>
+      <![CDATA[STEP76]]>
+    </line>
+    <line>
+      <![CDATA[STEP77]]>
+    </line>
+    <line>
+      <![CDATA[STEP78]]>
+    </line>
+    <line>
+      <![CDATA[STEP79]]>
+    </line>
+    <line>
+      <![CDATA[STEP80]]>
+    </line>
+    <line>
+      <![CDATA[STEP81]]>
+    </line>
+    <line>
+      <![CDATA[STEP82]]>
+    </line>
+    <line>
+      <![CDATA[STEP83]]>
+    </line>
+    <line>
+      <![CDATA[STEP84]]>
+    </line>
+    <line>
+      <![CDATA[STEP85]]>
+    </line>
+    <line>
+      <![CDATA[STEP86]]>
+    </line>
+    <line>
+      <![CDATA[STEP87]]>
+    </line>
+    <line>
+      <![CDATA[STEP88]]>
+    </line>
+    <line>
+      <![CDATA[STEP89]]>
+    </line>
+    <line>
+      <![CDATA[STEP90]]>
+    </line>
+    <line>
+      <![CDATA[STEP91]]>
+    </line>
+    <line>
+      <![CDATA[STEP92]]>
+    </line>
+    <line>
+      <![CDATA[STEP93]]>
+    </line>
+    <line>
+      <![CDATA[STEP94]]>
+    </line>
+    <line>
+      <![CDATA[STEP95]]>
+    </line>
+    <line>
+      <![CDATA[STEP96]]>
+    </line>
+    <line>
+      <![CDATA[STEP97]]>
+    </line>
+    <line>
+      <![CDATA[STEP98]]>
+    </line>
+    <line>
+      <![CDATA[STEP99]]>
+    </line>
+    <line>
+      <![CDATA[STEP100]]>
+    </line>
+    <line>
+      <![CDATA[STEP101]]>
+    </line>
+    <line>
+      <![CDATA[STEP102]]>
+    </line>
+    <line>
+      <![CDATA[STEP103]]>
+    </line>
+    <line>
+      <![CDATA[STEP104]]>
+    </line>
+    <line>
+      <![CDATA[STEP105]]>
+    </line>
+    <line>
+      <![CDATA[STEP106]]>
+    </line>
+    <line>
+      <![CDATA[STEP107]]>
+    </line>
+    <line>
+      <![CDATA[STEP108]]>
+    </line>
+    <line>
+      <![CDATA[STEP109]]>
+    </line>
+    <line>
+      <![CDATA[STEP110]]>
+    </line>
+    <line>
+      <![CDATA[STEP111]]>
+    </line>
+    <line>
+      <![CDATA[STEP112]]>
+    </line>
+    <line>
+      <![CDATA[STEP113]]>
+    </line>
+    <line>
+      <![CDATA[STEP114]]>
+    </line>
+    <line>
+      <![CDATA[STEP115]]>
+    </line>
+    <line>
+      <![CDATA[STEP116]]>
+    </line>
+    <line>
+      <![CDATA[STEP117]]>
+    </line>
+    <line>
+      <![CDATA[STEP118]]>
+    </line>
+    <line>
+      <![CDATA[STEP119]]>
+    </line>
+    <line>
+      <![CDATA[STEP120]]>
+    </line>
+    <line>
+      <![CDATA[STEP121]]>
+    </line>
+    <line>
+      <![CDATA[STEP122]]>
+    </line>
+    <line>
+      <![CDATA[STEP123]]>
+    </line>
+    <line>
+      <![CDATA[STEP124]]>
+    </line>
+    <line>
+      <![CDATA[STEP125]]>
+    </line>
+    <line>
+      <![CDATA[STEP126]]>
+    </line>
+    <line>
+      <![CDATA[STEP127]]>
+    </line>
+    <line>
+      <![CDATA[STEP128]]>
+    </line>
+    <line>
+      <![CDATA[STEP129]]>
+    </line>
+    <line>
+      <![CDATA[STEP130]]>
+    </line>
+    <line>
+      <![CDATA[STEP131]]>
+    </line>
+    <line>
+      <![CDATA[STEP132]]>
+    </line>
+    <line>
+      <![CDATA[STEP133]]>
+    </line>
+    <line>
+      <![CDATA[STEP134]]>
+    </line>
+    <line>
+      <![CDATA[STEP135]]>
+    </line>
+    <line>
+      <![CDATA[STEP136]]>
+    </line>
+    <line>
+      <![CDATA[STEP137]]>
+    </line>
+    <line>
+      <![CDATA[STEP138]]>
+    </line>
+    <line>
+      <![CDATA[STEP139]]>
+    </line>
+    <line>
+      <![CDATA[STEP140]]>
+    </line>
+    <line>
+      <![CDATA[STEP141]]>
+    </line>
+    <line>
+      <![CDATA[STEP142]]>
+    </line>
+    <line>
+      <![CDATA[STEP143]]>
+    </line>
+    <line>
+      <![CDATA[STEP144]]>
+    </line>
+    <line>
+      <![CDATA[STEP145]]>
+    </line>
+    <line>
+      <![CDATA[STEP146]]>
+    </line>
+    <line>
+      <![CDATA[STEP147]]>
+    </line>
+    <line>
+      <![CDATA[STEP148]]>
+    </line>
+    <line>
+      <![CDATA[STEP149]]>
+    </line>
+    <line>
+      <![CDATA[STEP150]]>
+    </line>
+    <line>
+      <![CDATA[STEP151]]>
+    </line>
+    <line>
+      <![CDATA[STEP152]]>
+    </line>
+    <line>
+      <![CDATA[STEP153]]>
+    </line>
+    <line>
+      <![CDATA[STEP154]]>
+    </line>
+    <line>
+      <![CDATA[STEP155]]>
+    </line>
+    <line>
+      <![CDATA[STEP156]]>
+    </line>
+    <line>
+      <![CDATA[STEP157]]>
+    </line>
+    <line>
+      <![CDATA[STEP158]]>
+    </line>
+    <line>
+      <![CDATA[STEP159]]>
+    </line>
+    <line>
+      <![CDATA[STEP160]]>
+    </line>
+    <line>
+      <![CDATA[STEP161]]>
+    </line>
+    <line>
+      <![CDATA[STEP162]]>
+    </line>
+    <line>
+      <![CDATA[STEP163]]>
+    </line>
+    <line>
+      <![CDATA[STEP164]]>
+    </line>
+    <line>
+      <![CDATA[STEP165]]>
+    </line>
+    <line>
+      <![CDATA[STEP166]]>
+    </line>
+    <line>
+      <![CDATA[STEP167]]>
+    </line>
+    <line>
+      <![CDATA[STEP168]]>
+    </line>
+    <line>
+      <![CDATA[STEP169]]>
+    </line>
+    <line>
+      <![CDATA[STEP170]]>
+    </line>
+    <line>
+      <![CDATA[STEP171]]>
+    </line>
+    <line>
+      <![CDATA[STEP172]]>
+    </line>
+    <line>
+      <![CDATA[STEP173]]>
+    </line>
+    <line>
+      <![CDATA[STEP174]]>
+    </line>
+    <line>
+      <![CDATA[STEP175]]>
+    </line>
+    <line>
+      <![CDATA[STEP176]]>
+    </line>
+    <line>
+      <![CDATA[STEP177]]>
+    </line>
+    <line>
+      <![CDATA[STEP178]]>
+    </line>
+    <line>
+      <![CDATA[STEP179]]>
+    </line>
+    <line>
+      <![CDATA[STEP180]]>
+    </line>
+    <line>
+      <![CDATA[STEP181]]>
+    </line>
+    <line>
+      <![CDATA[STEP182]]>
+    </line>
+    <line>
+      <![CDATA[STEP183]]>
+    </line>
+    <line>
+      <![CDATA[STEP184]]>
+    </line>
+    <line>
+      <![CDATA[STEP185]]>
+    </line>
+    <line>
+      <![CDATA[STEP186]]>
+    </line>
+    <line>
+      <![CDATA[STEP187]]>
+    </line>
+    <line>
+      <![CDATA[STEP188]]>
+    </line>
+    <line>
+      <![CDATA[STEP189]]>
+    </line>
+    <line>
+      <![CDATA[STEP190]]>
+    </line>
+    <line>
+      <![CDATA[STEP191]]>
+    </line>
+    <line>
+      <![CDATA[STEP192]]>
+    </line>
+    <line>
+      <![CDATA[STEP193]]>
+    </line>
+    <line>
+      <![CDATA[STEP194]]>
+    </line>
+    <line>
+      <![CDATA[STEP195]]>
+    </line>
+    <line>
+      <![CDATA[STEP196]]>
+    </line>
+    <line>
+      <![CDATA[STEP197]]>
+    </line>
+    <line>
+      <![CDATA[STEP198]]>
+    </line>
+    <line>
+      <![CDATA[STEP199]]>
+    </line>
+    <line>
+      <![CDATA[STEP200]]>
+    </line>
+    <line>
+      <![CDATA[STEP201]]>
+    </line>
+    <line>
+      <![CDATA[STEP202]]>
+    </line>
+    <line>
+      <![CDATA[STEP203]]>
+    </line>
   </reporter-output>
-  <suite started-at="2022-07-25T12:19:04Z" name="CCAutomation" finished-at="2022-07-25T12:19:26Z" duration-ms="21786">
+  <suite started-at="2023-02-22T12:20:55Z" name="MHAutomation" finished-at="2023-02-22T12:28:05Z" duration-ms="430188">
     <groups>
     </groups>
-    <test started-at="2022-07-25T12:19:04Z" name="CareCrewAutomation" finished-at="2022-07-25T12:19:26Z" duration-ms="21786">
-      <class name="com.jbk.mh.scripts.CCJobsDetailsPageTest">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.jbk.mh.scripts.CCJobsDetailsPageTest@74235045]" started-at="2022-07-25T17:49:03Z" name="beforeSuite" finished-at="2022-07-25T17:49:04Z" duration-ms="389" status="PASS">
+    <test started-at="2023-02-22T12:20:55Z" name="MedichireAutomation" finished-at="2023-02-22T12:28:05Z" duration-ms="430188">
+      <class name="com.jbk.mh.scripts.MHHomePageTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:50:54Z" name="beforeSuite" finished-at="2023-02-22T17:50:55Z" duration-ms="507" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="setUpTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.jbk.mh.scripts.CCJobsDetailsPageTest@74235045]" started-at="2022-07-25T17:49:04Z" name="setUpTest" finished-at="2022-07-25T17:49:04Z" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[103.0.5060]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method is-config="true" signature="indexDescription()[pri:0, instance:com.jbk.mh.scripts.CCJobsDetailsPageTest@74235045]" started-at="2022-07-25T17:49:04Z" name="indexDescription" finished-at="2022-07-25T17:49:04Z" duration-ms="13" status="PASS">
+        <test-method is-config="true" signature="indexDescription()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:50:55Z" name="indexDescription" finished-at="2023-02-22T17:50:55Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- indexDescription -->
-        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.CCJobsDetailsPageTest@74235045]" started-at="2022-07-25T17:49:04Z" name="setUp" finished-at="2022-07-25T17:49:05Z" duration-ms="1404" status="PASS">
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:50:55Z" name="setUp" finished-at="2023-02-22T17:50:57Z" duration-ms="1988" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@21f8e55f]]>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void com.jbk.mh.scripts.CCJobsDetailsPageTest.validateJobDetailsPageTest() throws java.lang.InterruptedException,java.lang.Exception]]>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyLoadingHomePage() throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateJobDetailsPageTest()[pri:0, instance:com.jbk.mh.scripts.CCJobsDetailsPageTest@74235045]" started-at="2022-07-25T17:49:05Z" name="validateJobDetailsPageTest" finished-at="2022-07-25T17:49:26Z" duration-ms="20325" status="PASS">
+        <test-method signature="verifyLoadingHomePage()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:50:57Z" name="verifyLoadingHomePage" finished-at="2023-02-22T17:51:02Z" duration-ms="4785" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[STEP1]]>
@@ -147,6 +648,26 @@
             <line>
               <![CDATA[STEP2]]>
             </line>
+          </reporter-output>
+        </test-method> <!-- verifyLoadingHomePage -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:51:02Z" name="setUp" finished-at="2023-02-22T17:51:03Z" duration-ms="1199" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyPresenceofTabs()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyPresenceofTabs()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:51:03Z" name="verifyPresenceofTabs" finished-at="2023-02-22T17:51:11Z" duration-ms="8260" status="PASS">
+          <reporter-output>
             <line>
               <![CDATA[STEP3]]>
             </line>
@@ -165,6 +686,26 @@
             <line>
               <![CDATA[STEP8]]>
             </line>
+          </reporter-output>
+        </test-method> <!-- verifyPresenceofTabs -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:51:11Z" name="setUp" finished-at="2023-02-22T17:51:13Z" duration-ms="1680" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyTagLine()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyTagLine()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:51:13Z" name="verifyTagLine" finished-at="2023-02-22T17:51:18Z" duration-ms="4659" status="PASS">
+          <reporter-output>
             <line>
               <![CDATA[STEP9]]>
             </line>
@@ -174,6 +715,26 @@
             <line>
               <![CDATA[STEP11]]>
             </line>
+          </reporter-output>
+        </test-method> <!-- verifyTagLine -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:51:18Z" name="setUp" finished-at="2023-02-22T17:51:19Z" duration-ms="1671" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifySearchFields()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySearchFields()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:51:19Z" name="verifySearchFields" finished-at="2023-02-22T17:51:25Z" duration-ms="5533" status="PASS">
+          <reporter-output>
             <line>
               <![CDATA[STEP12]]>
             </line>
@@ -189,68 +750,40 @@
             <line>
               <![CDATA[STEP16]]>
             </line>
-            <line>
-              <![CDATA[STEP17]]>
-            </line>
-            <line>
-              <![CDATA[STEP18]]>
-            </line>
-            <line>
-              <![CDATA[STEP19]]>
-            </line>
-            <line>
-              <![CDATA[STEP20]]>
-            </line>
-            <line>
-              <![CDATA[STEP21]]>
-            </line>
-            <line>
-              <![CDATA[STEP22]]>
-            </line>
-            <line>
-              <![CDATA[STEP23]]>
-            </line>
-            <line>
-              <![CDATA[STEP24]]>
-            </line>
-            <line>
-              <![CDATA[STEP25]]>
-            </line>
-            <line>
-              <![CDATA[STEP26]]>
-            </line>
-            <line>
-              <![CDATA[STEP27]]>
-            </line>
-            <line>
-              <![CDATA[STEP28]]>
-            </line>
-            <line>
-              <![CDATA[STEP29]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- validateJobDetailsPageTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.jbk.mh.scripts.CCJobsDetailsPageTest@74235045]" started-at="2022-07-25T17:49:26Z" name="tearDown" finished-at="2022-07-25T17:49:26Z" duration-ms="0" status="FAIL">
+        </test-method> <!-- verifySearchFields -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:51:25Z" name="setUp" finished-at="2023-02-22T17:51:26Z" duration-ms="1688" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validateJobDetailsPageTest status=SUCCESS method=CCJobsDetailsPageTest.validateJobDetailsPageTest()[pri:0, instance:com.jbk.mh.scripts.CCJobsDetailsPageTest@74235045] output=STEP1]]]>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyLocationAutoPopulateValue() throws java.lang.Exception]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.quit()" because the return value of "com.jbk.automation.framework.webdriver.WebDriverBase.getDriver()" is null]]>
-            </message>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLocationAutoPopulateValue()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:51:26Z" name="verifyLocationAutoPopulateValue" finished-at="2023-02-22T17:51:34Z" duration-ms="7397" status="FAIL">
+          <exception class="atu.testng.reports.exceptions.ATUReporterStepFailedException">
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because the return value of "com.jbk.automation.framework.webdriver.WebDriverBase.getDriver()" is null
-	at com.jbk.automation.framework.webdriver.WebDriverBase.tearDown(WebDriverBase.java:354)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+              <![CDATA[[ATU Custom Reporter Step Failed Exception]
+	at atu.testng.reports.ATUReports.stepFailureHandler(Unknown Source)
+	at atu.testng.reports.ATUReports.add(Unknown Source)
+	at com.jbk.automation.framework.reports.AtuReports.failResults(AtuReports.java:61)
+	at com.jbk.automation.framework.webdriver.Page.isTextPresent(Page.java:812)
+	at com.jbk.mh.pages.MHHomePage.getLocationDropdownValues(MHHomePage.java:602)
+	at com.jbk.mh.scripts.MHHomePageTest.verifyLocationAutoPopulateValue(MHHomePageTest.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
@@ -271,11 +804,1727 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- atu.testng.reports.exceptions.ATUReporterStepFailedException -->
+          <reporter-output>
+            <line>
+              <![CDATA[STEP17]]>
+            </line>
+            <line>
+              <![CDATA[STEP18]]>
+            </line>
+            <line>
+              <![CDATA[STEP19]]>
+            </line>
+            <line>
+              <![CDATA[STEP20]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLocationAutoPopulateValue -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:51:34Z" name="setUp" finished-at="2023-02-22T17:51:36Z" duration-ms="1692" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyJobsSearchByLocation() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.jbk.mh.scripts.CCJobsDetailsPageTest -->
-    </test> <!-- CareCrewAutomation -->
-  </suite> <!-- CCAutomation -->
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyJobsSearchByLocation()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:51:36Z" name="verifyJobsSearchByLocation" finished-at="2023-02-22T17:51:44Z" duration-ms="8854" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP21]]>
+            </line>
+            <line>
+              <![CDATA[STEP22]]>
+            </line>
+            <line>
+              <![CDATA[STEP23]]>
+            </line>
+            <line>
+              <![CDATA[STEP24]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyJobsSearchByLocation -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:51:44Z" name="setUp" finished-at="2023-02-22T17:51:46Z" duration-ms="1703" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyJobsSearchByTitle() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyJobsSearchByTitle()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:51:46Z" name="verifyJobsSearchByTitle" finished-at="2023-02-22T17:51:55Z" duration-ms="8416" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP25]]>
+            </line>
+            <line>
+              <![CDATA[STEP26]]>
+            </line>
+            <line>
+              <![CDATA[STEP27]]>
+            </line>
+            <line>
+              <![CDATA[STEP28]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyJobsSearchByTitle -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:51:55Z" name="setUp" finished-at="2023-02-22T17:51:56Z" duration-ms="1659" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyJobsSearchByTitleLocation() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyJobsSearchByTitleLocation()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:51:56Z" name="verifyJobsSearchByTitleLocation" finished-at="2023-02-22T17:52:06Z" duration-ms="9702" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP29]]>
+            </line>
+            <line>
+              <![CDATA[STEP30]]>
+            </line>
+            <line>
+              <![CDATA[STEP31]]>
+            </line>
+            <line>
+              <![CDATA[STEP32]]>
+            </line>
+            <line>
+              <![CDATA[STEP33]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyJobsSearchByTitleLocation -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:52:06Z" name="setUp" finished-at="2023-02-22T17:52:08Z" duration-ms="1686" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyPopularSearches()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyPopularSearches()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:52:08Z" name="verifyPopularSearches" finished-at="2023-02-22T17:52:12Z" duration-ms="4556" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP34]]>
+            </line>
+            <line>
+              <![CDATA[STEP35]]>
+            </line>
+            <line>
+              <![CDATA[STEP36]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyPopularSearches -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:52:12Z" name="setUp" finished-at="2023-02-22T17:52:14Z" duration-ms="1662" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyPopularSearchesLink()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyPopularSearchesLink()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:52:14Z" name="verifyPopularSearchesLink" finished-at="2023-02-22T17:52:19Z" duration-ms="5418" status="FAIL">
+          <exception class="atu.testng.reports.exceptions.ATUReporterStepFailedException">
+            <full-stacktrace>
+              <![CDATA[[ATU Custom Reporter Step Failed Exception]
+	at atu.testng.reports.ATUReports.stepFailureHandler(Unknown Source)
+	at atu.testng.reports.ATUReports.add(Unknown Source)
+	at com.jbk.automation.framework.reports.AtuReports.failResults(AtuReports.java:61)
+	at com.jbk.mh.pages.MHHomePage.verifyPopularSearchesLink(MHHomePage.java:625)
+	at com.jbk.mh.scripts.MHHomePageTest.verifyPopularSearchesLink(MHHomePageTest.java:149)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- atu.testng.reports.exceptions.ATUReporterStepFailedException -->
+          <reporter-output>
+            <line>
+              <![CDATA[STEP37]]>
+            </line>
+            <line>
+              <![CDATA[STEP38]]>
+            </line>
+            <line>
+              <![CDATA[STEP39]]>
+            </line>
+            <line>
+              <![CDATA[STEP40]]>
+            </line>
+            <line>
+              <![CDATA[STEP41]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyPopularSearchesLink -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:52:19Z" name="setUp" finished-at="2023-02-22T17:52:21Z" duration-ms="1746" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyTopLocations()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyTopLocations()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:52:21Z" name="verifyTopLocations" finished-at="2023-02-22T17:52:26Z" duration-ms="4600" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP42]]>
+            </line>
+            <line>
+              <![CDATA[STEP43]]>
+            </line>
+            <line>
+              <![CDATA[STEP44]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyTopLocations -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:52:26Z" name="setUp" finished-at="2023-02-22T17:52:27Z" duration-ms="1172" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyTopLocationsLink()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyTopLocationsLink()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:52:27Z" name="verifyTopLocationsLink" finished-at="2023-02-22T17:52:32Z" duration-ms="4891" status="FAIL">
+          <exception class="atu.testng.reports.exceptions.ATUReporterStepFailedException">
+            <full-stacktrace>
+              <![CDATA[[ATU Custom Reporter Step Failed Exception]
+	at atu.testng.reports.ATUReports.stepFailureHandler(Unknown Source)
+	at atu.testng.reports.ATUReports.add(Unknown Source)
+	at com.jbk.automation.framework.reports.AtuReports.failResults(AtuReports.java:61)
+	at com.jbk.mh.pages.MHHomePage.verifyTopLocationsLink(MHHomePage.java:651)
+	at com.jbk.mh.scripts.MHHomePageTest.verifyTopLocationsLink(MHHomePageTest.java:173)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- atu.testng.reports.exceptions.ATUReporterStepFailedException -->
+          <reporter-output>
+            <line>
+              <![CDATA[STEP45]]>
+            </line>
+            <line>
+              <![CDATA[STEP46]]>
+            </line>
+            <line>
+              <![CDATA[STEP47]]>
+            </line>
+            <line>
+              <![CDATA[STEP48]]>
+            </line>
+            <line>
+              <![CDATA[STEP49]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyTopLocationsLink -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:52:32Z" name="setUp" finished-at="2023-02-22T17:52:33Z" duration-ms="1699" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyFeaturedJobs()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyFeaturedJobs()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:52:33Z" name="verifyFeaturedJobs" finished-at="2023-02-22T17:52:41Z" duration-ms="7438" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP50]]>
+            </line>
+            <line>
+              <![CDATA[STEP51]]>
+            </line>
+            <line>
+              <![CDATA[STEP52]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyFeaturedJobs -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:52:41Z" name="setUp" finished-at="2023-02-22T17:52:43Z" duration-ms="1771" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyFeaturedJobLink()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyFeaturedJobLink()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:52:43Z" name="verifyFeaturedJobLink" finished-at="2023-02-22T17:52:52Z" duration-ms="9839" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP53]]>
+            </line>
+            <line>
+              <![CDATA[STEP54]]>
+            </line>
+            <line>
+              <![CDATA[STEP55]]>
+            </line>
+            <line>
+              <![CDATA[STEP56]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyFeaturedJobLink -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:52:52Z" name="setUp" finished-at="2023-02-22T17:52:54Z" duration-ms="1719" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyBrowseJobs()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyBrowseJobs()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:52:54Z" name="verifyBrowseJobs" finished-at="2023-02-22T17:52:59Z" duration-ms="5265" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP57]]>
+            </line>
+            <line>
+              <![CDATA[STEP58]]>
+            </line>
+            <line>
+              <![CDATA[STEP59]]>
+            </line>
+            <line>
+              <![CDATA[STEP60]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyBrowseJobs -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:52:59Z" name="setUp" finished-at="2023-02-22T17:53:01Z" duration-ms="1674" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyBrowseJobsByLocation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyBrowseJobsByLocation()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:53:01Z" name="verifyBrowseJobsByLocation" finished-at="2023-02-22T17:53:11Z" duration-ms="9830" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP61]]>
+            </line>
+            <line>
+              <![CDATA[STEP62]]>
+            </line>
+            <line>
+              <![CDATA[STEP63]]>
+            </line>
+            <line>
+              <![CDATA[STEP64]]>
+            </line>
+            <line>
+              <![CDATA[STEP65]]>
+            </line>
+            <line>
+              <![CDATA[STEP66]]>
+            </line>
+            <line>
+              <![CDATA[STEP67]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyBrowseJobsByLocation -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:53:11Z" name="setUp" finished-at="2023-02-22T17:53:13Z" duration-ms="1654" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyBrowseJobsByCompany()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyBrowseJobsByCompany()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:53:13Z" name="verifyBrowseJobsByCompany" finished-at="2023-02-22T17:53:22Z" duration-ms="9640" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP68]]>
+            </line>
+            <line>
+              <![CDATA[STEP69]]>
+            </line>
+            <line>
+              <![CDATA[STEP70]]>
+            </line>
+            <line>
+              <![CDATA[STEP71]]>
+            </line>
+            <line>
+              <![CDATA[STEP72]]>
+            </line>
+            <line>
+              <![CDATA[STEP73]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyBrowseJobsByCompany -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:53:22Z" name="setUp" finished-at="2023-02-22T17:53:24Z" duration-ms="1682" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyTopCompanies()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyTopCompanies()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:53:24Z" name="verifyTopCompanies" finished-at="2023-02-22T17:53:29Z" duration-ms="4709" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP74]]>
+            </line>
+            <line>
+              <![CDATA[STEP75]]>
+            </line>
+            <line>
+              <![CDATA[STEP76]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyTopCompanies -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:53:29Z" name="setUp" finished-at="2023-02-22T17:53:30Z" duration-ms="1691" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyTopCompaniesScrolling()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyTopCompaniesScrolling()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:53:30Z" name="verifyTopCompaniesScrolling" finished-at="2023-02-22T17:53:36Z" duration-ms="5308" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP77]]>
+            </line>
+            <line>
+              <![CDATA[STEP78]]>
+            </line>
+            <line>
+              <![CDATA[STEP79]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyTopCompaniesScrolling -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:53:36Z" name="setUp" finished-at="2023-02-22T17:53:37Z" duration-ms="1694" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyTopCompaniesLink()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyTopCompaniesLink()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:53:37Z" name="verifyTopCompaniesLink" finished-at="2023-02-22T17:53:44Z" duration-ms="6693" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP80]]>
+            </line>
+            <line>
+              <![CDATA[STEP81]]>
+            </line>
+            <line>
+              <![CDATA[STEP82]]>
+            </line>
+            <line>
+              <![CDATA[STEP83]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyTopCompaniesLink -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:53:44Z" name="setUp" finished-at="2023-02-22T17:53:46Z" duration-ms="1708" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyBrowseMoreCompanies()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyBrowseMoreCompanies()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:53:46Z" name="verifyBrowseMoreCompanies" finished-at="2023-02-22T17:54:02Z" duration-ms="16388" status="FAIL">
+          <exception class="atu.testng.reports.exceptions.ATUReporterStepFailedException">
+            <full-stacktrace>
+              <![CDATA[[ATU Custom Reporter Step Failed Exception]
+	at atu.testng.reports.ATUReports.stepFailureHandler(Unknown Source)
+	at atu.testng.reports.ATUReports.add(Unknown Source)
+	at com.jbk.automation.framework.reports.AtuReports.failResults(AtuReports.java:61)
+	at com.jbk.automation.framework.webdriver.Page.jsClick(Page.java:105)
+	at com.jbk.mh.pages.MHHomePage.verifyBrowseMoreCompanies(MHHomePage.java:730)
+	at com.jbk.mh.scripts.MHHomePageTest.verifyBrowseMoreCompanies(MHHomePageTest.java:279)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- atu.testng.reports.exceptions.ATUReporterStepFailedException -->
+          <reporter-output>
+            <line>
+              <![CDATA[STEP84]]>
+            </line>
+            <line>
+              <![CDATA[STEP85]]>
+            </line>
+            <line>
+              <![CDATA[STEP86]]>
+            </line>
+            <line>
+              <![CDATA[STEP87]]>
+            </line>
+            <line>
+              <![CDATA[STEP88]]>
+            </line>
+            <line>
+              <![CDATA[STEP89]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyBrowseMoreCompanies -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:54:02Z" name="setUp" finished-at="2023-02-22T17:54:04Z" duration-ms="1702" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyViewNewJobs()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyViewNewJobs()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:54:04Z" name="verifyViewNewJobs" finished-at="2023-02-22T17:54:08Z" duration-ms="4399" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP90]]>
+            </line>
+            <line>
+              <![CDATA[STEP91]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyViewNewJobs -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:54:08Z" name="setUp" finished-at="2023-02-22T17:54:10Z" duration-ms="1702" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifygetJobDetails()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifygetJobDetails()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:54:10Z" name="verifygetJobDetails" finished-at="2023-02-22T17:54:16Z" duration-ms="5731" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP92]]>
+            </line>
+            <line>
+              <![CDATA[STEP93]]>
+            </line>
+            <line>
+              <![CDATA[STEP94]]>
+            </line>
+            <line>
+              <![CDATA[STEP95]]>
+            </line>
+            <line>
+              <![CDATA[STEP96]]>
+            </line>
+            <line>
+              <![CDATA[STEP97]]>
+            </line>
+            <line>
+              <![CDATA[STEP98]]>
+            </line>
+            <line>
+              <![CDATA[STEP99]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifygetJobDetails -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:54:16Z" name="setUp" finished-at="2023-02-22T17:54:17Z" duration-ms="1704" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyNewJobNavigation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyNewJobNavigation()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:54:17Z" name="verifyNewJobNavigation" finished-at="2023-02-22T17:54:24Z" duration-ms="6966" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP100]]>
+            </line>
+            <line>
+              <![CDATA[STEP101]]>
+            </line>
+            <line>
+              <![CDATA[STEP102]]>
+            </line>
+            <line>
+              <![CDATA[STEP103]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyNewJobNavigation -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:54:24Z" name="setUp" finished-at="2023-02-22T17:54:26Z" duration-ms="1714" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.validateNewJobSaveIcon()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateNewJobSaveIcon()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:54:26Z" name="validateNewJobSaveIcon" finished-at="2023-02-22T17:54:32Z" duration-ms="6119" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP104]]>
+            </line>
+            <line>
+              <![CDATA[STEP105]]>
+            </line>
+            <line>
+              <![CDATA[STEP106]]>
+            </line>
+            <line>
+              <![CDATA[STEP107]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validateNewJobSaveIcon -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:54:32Z" name="setUp" finished-at="2023-02-22T17:54:34Z" duration-ms="1700" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.validateNewJobApplyButton()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateNewJobApplyButton()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:54:34Z" name="validateNewJobApplyButton" finished-at="2023-02-22T17:54:40Z" duration-ms="5853" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP108]]>
+            </line>
+            <line>
+              <![CDATA[STEP109]]>
+            </line>
+            <line>
+              <![CDATA[STEP110]]>
+            </line>
+            <line>
+              <![CDATA[STEP111]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validateNewJobApplyButton -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:54:40Z" name="setUp" finished-at="2023-02-22T17:54:41Z" duration-ms="1702" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyViewAllNewJobs()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyViewAllNewJobs()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:54:41Z" name="verifyViewAllNewJobs" finished-at="2023-02-22T17:54:53Z" duration-ms="11325" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP112]]>
+            </line>
+            <line>
+              <![CDATA[STEP113]]>
+            </line>
+            <line>
+              <![CDATA[STEP114]]>
+            </line>
+            <line>
+              <![CDATA[STEP115]]>
+            </line>
+            <line>
+              <![CDATA[STEP116]]>
+            </line>
+            <line>
+              <![CDATA[STEP117]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyViewAllNewJobs -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:54:53Z" name="setUp" finished-at="2023-02-22T17:54:54Z" duration-ms="1745" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyHireNowTagLine()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyHireNowTagLine()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:54:54Z" name="verifyHireNowTagLine" finished-at="2023-02-22T17:55:00Z" duration-ms="5267" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP118]]>
+            </line>
+            <line>
+              <![CDATA[STEP119]]>
+            </line>
+            <line>
+              <![CDATA[STEP120]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyHireNowTagLine -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:55:00Z" name="setUp" finished-at="2023-02-22T17:55:01Z" duration-ms="1722" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyHireNowLink()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyHireNowLink()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:55:01Z" name="verifyHireNowLink" finished-at="2023-02-22T17:55:18Z" duration-ms="16437" status="FAIL">
+          <exception class="atu.testng.reports.exceptions.ATUReporterStepFailedException">
+            <full-stacktrace>
+              <![CDATA[[ATU Custom Reporter Step Failed Exception]
+	at atu.testng.reports.ATUReports.stepFailureHandler(Unknown Source)
+	at atu.testng.reports.ATUReports.add(Unknown Source)
+	at com.jbk.automation.framework.reports.AtuReports.failResults(AtuReports.java:61)
+	at com.jbk.automation.framework.webdriver.Page.jsClick(Page.java:105)
+	at com.jbk.mh.pages.MHHomePage.verifyHireNowLink(MHHomePage.java:831)
+	at com.jbk.mh.scripts.MHHomePageTest.verifyHireNowLink(MHHomePageTest.java:374)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- atu.testng.reports.exceptions.ATUReporterStepFailedException -->
+          <reporter-output>
+            <line>
+              <![CDATA[STEP121]]>
+            </line>
+            <line>
+              <![CDATA[STEP122]]>
+            </line>
+            <line>
+              <![CDATA[STEP123]]>
+            </line>
+            <line>
+              <![CDATA[STEP124]]>
+            </line>
+            <line>
+              <![CDATA[STEP125]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyHireNowLink -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:55:18Z" name="setUp" finished-at="2023-02-22T17:55:20Z" duration-ms="1676" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyLinkedInIconPresence()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLinkedInIconPresence()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:55:20Z" name="verifyLinkedInIconPresence" finished-at="2023-02-22T17:55:24Z" duration-ms="4930" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP126]]>
+            </line>
+            <line>
+              <![CDATA[STEP127]]>
+            </line>
+            <line>
+              <![CDATA[STEP128]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLinkedInIconPresence -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:55:24Z" name="setUp" finished-at="2023-02-22T17:55:26Z" duration-ms="1716" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyLinkedInNavigation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLinkedInNavigation()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:55:26Z" name="verifyLinkedInNavigation" finished-at="2023-02-22T17:55:33Z" duration-ms="7197" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP129]]>
+            </line>
+            <line>
+              <![CDATA[STEP130]]>
+            </line>
+            <line>
+              <![CDATA[STEP131]]>
+            </line>
+            <line>
+              <![CDATA[STEP132]]>
+            </line>
+            <line>
+              <![CDATA[STEP133]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLinkedInNavigation -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:55:33Z" name="setUp" finished-at="2023-02-22T17:55:35Z" duration-ms="1699" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyFacebookIconPresence()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyFacebookIconPresence()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:55:35Z" name="verifyFacebookIconPresence" finished-at="2023-02-22T17:55:41Z" duration-ms="6376" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP134]]>
+            </line>
+            <line>
+              <![CDATA[STEP135]]>
+            </line>
+            <line>
+              <![CDATA[STEP136]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyFacebookIconPresence -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:55:41Z" name="setUp" finished-at="2023-02-22T17:55:43Z" duration-ms="1800" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyFacebookNavigation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyFacebookNavigation()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:55:43Z" name="verifyFacebookNavigation" finished-at="2023-02-22T17:55:51Z" duration-ms="7434" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP137]]>
+            </line>
+            <line>
+              <![CDATA[STEP138]]>
+            </line>
+            <line>
+              <![CDATA[STEP139]]>
+            </line>
+            <line>
+              <![CDATA[STEP140]]>
+            </line>
+            <line>
+              <![CDATA[STEP141]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyFacebookNavigation -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:55:51Z" name="setUp" finished-at="2023-02-22T17:55:52Z" duration-ms="1709" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyTwitterIconPresence()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyTwitterIconPresence()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:55:52Z" name="verifyTwitterIconPresence" finished-at="2023-02-22T17:55:58Z" duration-ms="5453" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP142]]>
+            </line>
+            <line>
+              <![CDATA[STEP143]]>
+            </line>
+            <line>
+              <![CDATA[STEP144]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyTwitterIconPresence -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:55:58Z" name="setUp" finished-at="2023-02-22T17:56:00Z" duration-ms="1770" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyTwitterNavigation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyTwitterNavigation()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:56:00Z" name="verifyTwitterNavigation" finished-at="2023-02-22T17:56:10Z" duration-ms="9926" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP145]]>
+            </line>
+            <line>
+              <![CDATA[STEP146]]>
+            </line>
+            <line>
+              <![CDATA[STEP147]]>
+            </line>
+            <line>
+              <![CDATA[STEP148]]>
+            </line>
+            <line>
+              <![CDATA[STEP149]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyTwitterNavigation -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:56:10Z" name="setUp" finished-at="2023-02-22T17:56:11Z" duration-ms="1681" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyJobSeekerMoreCompanies()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyJobSeekerMoreCompanies()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:56:11Z" name="verifyJobSeekerMoreCompanies" finished-at="2023-02-22T17:56:29Z" duration-ms="18008" status="FAIL">
+          <exception class="atu.testng.reports.exceptions.ATUReporterStepFailedException">
+            <full-stacktrace>
+              <![CDATA[[ATU Custom Reporter Step Failed Exception]
+	at atu.testng.reports.ATUReports.stepFailureHandler(Unknown Source)
+	at atu.testng.reports.ATUReports.add(Unknown Source)
+	at com.jbk.automation.framework.reports.AtuReports.failResults(AtuReports.java:61)
+	at com.jbk.automation.framework.webdriver.Page.jsClick(Page.java:105)
+	at com.jbk.mh.pages.MHHomePage.verifyJobSeekerMoreCompanies(MHHomePage.java:921)
+	at com.jbk.mh.scripts.MHHomePageTest.verifyJobSeekerMoreCompanies(MHHomePageTest.java:459)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- atu.testng.reports.exceptions.ATUReporterStepFailedException -->
+          <reporter-output>
+            <line>
+              <![CDATA[STEP150]]>
+            </line>
+            <line>
+              <![CDATA[STEP151]]>
+            </line>
+            <line>
+              <![CDATA[STEP152]]>
+            </line>
+            <line>
+              <![CDATA[STEP153]]>
+            </line>
+            <line>
+              <![CDATA[STEP154]]>
+            </line>
+            <line>
+              <![CDATA[STEP155]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyJobSeekerMoreCompanies -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:56:29Z" name="setUp" finished-at="2023-02-22T17:56:31Z" duration-ms="1697" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyAboutUsNavigation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyAboutUsNavigation()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:56:31Z" name="verifyAboutUsNavigation" finished-at="2023-02-22T17:56:47Z" duration-ms="15883" status="FAIL">
+          <exception class="atu.testng.reports.exceptions.ATUReporterStepFailedException">
+            <full-stacktrace>
+              <![CDATA[[ATU Custom Reporter Step Failed Exception]
+	at atu.testng.reports.ATUReports.stepFailureHandler(Unknown Source)
+	at atu.testng.reports.ATUReports.add(Unknown Source)
+	at com.jbk.automation.framework.reports.AtuReports.failResults(AtuReports.java:61)
+	at com.jbk.automation.framework.webdriver.Page.isTextPresent(Page.java:812)
+	at com.jbk.mh.pages.MHHomePage.verifyAboutUsNavigation(MHHomePage.java:931)
+	at com.jbk.mh.scripts.MHHomePageTest.verifyAboutUsNavigation(MHHomePageTest.java:471)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- atu.testng.reports.exceptions.ATUReporterStepFailedException -->
+          <reporter-output>
+            <line>
+              <![CDATA[STEP156]]>
+            </line>
+            <line>
+              <![CDATA[STEP157]]>
+            </line>
+            <line>
+              <![CDATA[STEP158]]>
+            </line>
+            <line>
+              <![CDATA[STEP159]]>
+            </line>
+            <line>
+              <![CDATA[STEP160]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyAboutUsNavigation -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:56:47Z" name="setUp" finished-at="2023-02-22T17:56:49Z" duration-ms="1702" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyOurTechnologyNavigation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyOurTechnologyNavigation()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:56:49Z" name="verifyOurTechnologyNavigation" finished-at="2023-02-22T17:56:54Z" duration-ms="5636" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP161]]>
+            </line>
+            <line>
+              <![CDATA[STEP162]]>
+            </line>
+            <line>
+              <![CDATA[STEP163]]>
+            </line>
+            <line>
+              <![CDATA[STEP164]]>
+            </line>
+            <line>
+              <![CDATA[STEP165]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyOurTechnologyNavigation -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:56:54Z" name="setUp" finished-at="2023-02-22T17:56:56Z" duration-ms="1723" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyWorkWithUsNavigation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyWorkWithUsNavigation()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:56:56Z" name="verifyWorkWithUsNavigation" finished-at="2023-02-22T17:57:12Z" duration-ms="16078" status="FAIL">
+          <exception class="atu.testng.reports.exceptions.ATUReporterStepFailedException">
+            <full-stacktrace>
+              <![CDATA[[ATU Custom Reporter Step Failed Exception]
+	at atu.testng.reports.ATUReports.stepFailureHandler(Unknown Source)
+	at atu.testng.reports.ATUReports.add(Unknown Source)
+	at com.jbk.automation.framework.reports.AtuReports.failResults(AtuReports.java:61)
+	at com.jbk.automation.framework.webdriver.Page.isTextPresent(Page.java:812)
+	at com.jbk.mh.pages.MHHomePage.verifyWorkWithUsNavigation(MHHomePage.java:948)
+	at com.jbk.mh.scripts.MHHomePageTest.verifyWorkWithUsNavigation(MHHomePageTest.java:495)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- atu.testng.reports.exceptions.ATUReporterStepFailedException -->
+          <reporter-output>
+            <line>
+              <![CDATA[STEP166]]>
+            </line>
+            <line>
+              <![CDATA[STEP167]]>
+            </line>
+            <line>
+              <![CDATA[STEP168]]>
+            </line>
+            <line>
+              <![CDATA[STEP169]]>
+            </line>
+            <line>
+              <![CDATA[STEP170]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyWorkWithUsNavigation -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:57:12Z" name="setUp" finished-at="2023-02-22T17:57:14Z" duration-ms="1680" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyBlogNavigation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyBlogNavigation()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:57:14Z" name="verifyBlogNavigation" finished-at="2023-02-22T17:57:25Z" duration-ms="11764" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP171]]>
+            </line>
+            <line>
+              <![CDATA[STEP172]]>
+            </line>
+            <line>
+              <![CDATA[STEP173]]>
+            </line>
+            <line>
+              <![CDATA[STEP174]]>
+            </line>
+            <line>
+              <![CDATA[STEP175]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyBlogNavigation -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:57:25Z" name="setUp" finished-at="2023-02-22T17:57:27Z" duration-ms="1734" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyContactUs()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyContactUs()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:57:27Z" name="verifyContactUs" finished-at="2023-02-22T17:57:38Z" duration-ms="10540" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP176]]>
+            </line>
+            <line>
+              <![CDATA[STEP177]]>
+            </line>
+            <line>
+              <![CDATA[STEP178]]>
+            </line>
+            <line>
+              <![CDATA[STEP179]]>
+            </line>
+            <line>
+              <![CDATA[STEP180]]>
+            </line>
+            <line>
+              <![CDATA[STEP181]]>
+            </line>
+            <line>
+              <![CDATA[STEP182]]>
+            </line>
+            <line>
+              <![CDATA[STEP183]]>
+            </line>
+            <line>
+              <![CDATA[STEP184]]>
+            </line>
+            <line>
+              <![CDATA[STEP185]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyContactUs -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:57:38Z" name="setUp" finished-at="2023-02-22T17:57:39Z" duration-ms="1699" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyPrivacyPolicyNavigation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyPrivacyPolicyNavigation()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:57:39Z" name="verifyPrivacyPolicyNavigation" finished-at="2023-02-22T17:57:44Z" duration-ms="4613" status="FAIL">
+          <exception class="atu.testng.reports.exceptions.ATUReporterStepFailedException">
+            <full-stacktrace>
+              <![CDATA[[ATU Custom Reporter Step Failed Exception]
+	at atu.testng.reports.ATUReports.stepFailureHandler(Unknown Source)
+	at atu.testng.reports.ATUReports.add(Unknown Source)
+	at com.jbk.automation.framework.reports.AtuReports.failResults(AtuReports.java:61)
+	at com.jbk.mh.pages.MHHomePage.verifyPrivacyPolicyNavigation(MHHomePage.java:1034)
+	at com.jbk.mh.scripts.MHHomePageTest.verifyPrivacyPolicyNavigation(MHHomePageTest.java:532)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- atu.testng.reports.exceptions.ATUReporterStepFailedException -->
+          <reporter-output>
+            <line>
+              <![CDATA[STEP186]]>
+            </line>
+            <line>
+              <![CDATA[STEP187]]>
+            </line>
+            <line>
+              <![CDATA[STEP188]]>
+            </line>
+            <line>
+              <![CDATA[STEP189]]>
+            </line>
+            <line>
+              <![CDATA[STEP190]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyPrivacyPolicyNavigation -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:57:44Z" name="setUp" finished-at="2023-02-22T17:57:46Z" duration-ms="1795" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyTermsOfServiceNavigation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyTermsOfServiceNavigation()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:57:46Z" name="verifyTermsOfServiceNavigation" finished-at="2023-02-22T17:57:50Z" duration-ms="4453" status="FAIL">
+          <exception class="atu.testng.reports.exceptions.ATUReporterStepFailedException">
+            <full-stacktrace>
+              <![CDATA[[ATU Custom Reporter Step Failed Exception]
+	at atu.testng.reports.ATUReports.stepFailureHandler(Unknown Source)
+	at atu.testng.reports.ATUReports.add(Unknown Source)
+	at com.jbk.automation.framework.reports.AtuReports.failResults(AtuReports.java:61)
+	at com.jbk.mh.pages.MHHomePage.verifyTermsOfServiceNavigation(MHHomePage.java:1055)
+	at com.jbk.mh.scripts.MHHomePageTest.verifyTermsOfServiceNavigation(MHHomePageTest.java:544)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- atu.testng.reports.exceptions.ATUReporterStepFailedException -->
+          <reporter-output>
+            <line>
+              <![CDATA[STEP191]]>
+            </line>
+            <line>
+              <![CDATA[STEP192]]>
+            </line>
+            <line>
+              <![CDATA[STEP193]]>
+            </line>
+            <line>
+              <![CDATA[STEP194]]>
+            </line>
+            <line>
+              <![CDATA[STEP195]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyTermsOfServiceNavigation -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:57:50Z" name="setUp" finished-at="2023-02-22T17:57:52Z" duration-ms="1791" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyCookiePolicyNavigation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyCookiePolicyNavigation()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:57:52Z" name="verifyCookiePolicyNavigation" finished-at="2023-02-22T17:57:57Z" duration-ms="5160" status="FAIL">
+          <exception class="atu.testng.reports.exceptions.ATUReporterStepFailedException">
+            <full-stacktrace>
+              <![CDATA[[ATU Custom Reporter Step Failed Exception]
+	at atu.testng.reports.ATUReports.stepFailureHandler(Unknown Source)
+	at atu.testng.reports.ATUReports.add(Unknown Source)
+	at com.jbk.automation.framework.reports.AtuReports.failResults(AtuReports.java:61)
+	at com.jbk.mh.pages.MHHomePage.verifyCookiePolicyNavigation(MHHomePage.java:1076)
+	at com.jbk.mh.scripts.MHHomePageTest.verifyCookiePolicyNavigation(MHHomePageTest.java:556)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- atu.testng.reports.exceptions.ATUReporterStepFailedException -->
+          <reporter-output>
+            <line>
+              <![CDATA[STEP196]]>
+            </line>
+            <line>
+              <![CDATA[STEP197]]>
+            </line>
+            <line>
+              <![CDATA[STEP198]]>
+            </line>
+            <line>
+              <![CDATA[STEP199]]>
+            </line>
+            <line>
+              <![CDATA[STEP200]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyCookiePolicyNavigation -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:57:57Z" name="setUp" finished-at="2023-02-22T17:57:59Z" duration-ms="1698" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f117b3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.jbk.mh.scripts.MHHomePageTest.verifyCopyRightFooter()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyCopyRightFooter()[pri:0, instance:com.jbk.mh.scripts.MHHomePageTest@3fb1549b]" started-at="2023-02-22T17:57:59Z" name="verifyCopyRightFooter" finished-at="2023-02-22T17:58:05Z" duration-ms="6284" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP201]]>
+            </line>
+            <line>
+              <![CDATA[STEP202]]>
+            </line>
+            <line>
+              <![CDATA[STEP203]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyCopyRightFooter -->
+      </class> <!-- com.jbk.mh.scripts.MHHomePageTest -->
+    </test> <!-- MedichireAutomation -->
+  </suite> <!-- MHAutomation -->
 </testng-results>
